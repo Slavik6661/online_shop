@@ -1,0 +1,1416 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 16 Pro",
+    "price": 120000,
+    "oldPrice": 130000,
+    "popularity": 5,
+    "reviews": 50,
+    "rating": 4.5,
+    "image": [
+      "/phone/16 pro 1.png",
+      "/phone/16 pro 2.png",
+      "/phone/16 pro 3.png"
+    ],
+    "discount": 10,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Apple iPhone 16 Pro",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "черный",
+      "edge_color": "черный",
+      "manufacturer_color": "Black Titanium"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.3\"",
+      "resolution": "2622x1206",
+      "technology": "AMOLED",
+      "matrix_type": "Super Retina XDR",
+      "brightness": "2000 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "460 ppi",
+      "aspect_ratio": "19.5:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, титан",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Ceramic Shield",
+      "IP_rating": "IP68",
+      "notch_type": "круглый/овальный"
+    },
+    "OS_and_processor": {
+      "OS": "iOS",
+      "OS_version": "iOS 18",
+      "Google_Mobile_Services": false,
+      "processor_model": "Apple A18 Pro",
+      "core_count": 6,
+      "max_frequency": "3.89 ГГц",
+      "process_technology": "3 нм",
+      "GPU": "Apple A18 Pro GPU"
+    },
+    "memory": {
+      "RAM": "8 ГБ",
+      "virtual_RAM_expansion": "0 ГБ",
+      "internal_storage": "256 ГБ",
+      "memory_card_slot": false
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "48+48+12 Мп",
+      "aperture": "1.6, 1.78, 2.8",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "25 x",
+      "optical_zoom": "2 x, 5 x",
+      "features": "7-элементная линза, автоматическая стабилизация изображения, вспышка True Tone, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, портреты с контролем фокусировки и глубины, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K",
+        "resolutions": "1280x720 (30 кадр./сек.), 1920x1080 (25 кадр./сек.), 1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "25-кратный цифровой зум",
+        "features": "3D-стабилизация оптического изображения со сдвигом датчика, аудиозум, вспышка True Tone, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "12 Мп",
+      "aperture": "1.9",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (25 кадр./сек.), 1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте Dolby Vision, ещё",
+      "modes": "Animoji и Memoji, кинематографическая стабилизация видео, кинематографический режим, ночной режим, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, APAC, Apple Lossless (ALAC), FLAC, MP3"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Hotspot, Wi-Fi MIMO"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер LiDAR"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "85 ч",
+      "video_playback_time": "27 ч"
+    },
+    "additional_info": {
+      "biometric_security": "распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Siri, двухчастотный GPS, кнопка действия, кнопка управления камерой, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "71.5 мм",
+      "height": "149.6 мм",
+      "thickness": "8.2 мм",
+      "weight": "199 г"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "price": 110000,
+    "oldPrice": 120000,
+    "popularity": 8,
+    "reviews": 80,
+    "rating": 4.7,
+    "image": ["path/to/image2.jpg"],
+    "discount": 8,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Samsung Galaxy S24 Ultra",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "черный",
+      "edge_color": "серебристый",
+      "manufacturer_color": "Phantom Black"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.8\"",
+      "resolution": "3088x1440",
+      "technology": "Dynamic AMOLED 2X",
+      "matrix_type": "Infinity-O Display",
+      "brightness": "1750 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "515 ppi",
+      "aspect_ratio": "20:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "Qualcomm Snapdragon 8 Gen 3",
+      "core_count": 8,
+      "max_frequency": "3.2 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Adreno 740"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "4 ГБ",
+      "internal_storage": "512 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 4,
+      "megapixels": "200+50+12+10 Мп",
+      "aperture": "1.8, 2.2, 2.4, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "123°",
+      "optical_stabilization": true,
+      "digital_zoom": "30 x",
+      "optical_zoom": "10 x",
+      "features": "108-мегапиксельная основная камера, оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "30-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "40 Мп",
+      "aperture": "2.2",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "90 ч",
+      "video_playback_time": "24 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Bixby, кнопка Bixby, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "77.8 мм",
+      "height": "163.3 мм",
+      "thickness": "8.9 мм",
+      "weight": "228 г"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi Mi 14 Pro",
+    "price": 95000,
+    "oldPrice": 105000,
+    "popularity": 6,
+    "reviews": 60,
+    "rating": 4.8,
+    "image": ["path/to/image3.jpg"],
+    "discount": 10,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Xiaomi Mi 14 Pro",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "синий",
+      "edge_color": "синий",
+      "manufacturer_color": "Cosmic Blue"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.73\"",
+      "resolution": "3200x1440",
+      "technology": "AMOLED",
+      "matrix_type": "DotDisplay",
+      "brightness": "1500 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "522 ppi",
+      "aspect_ratio": "20:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "Qualcomm Snapdragon 8 Gen 3",
+      "core_count": 8,
+      "max_frequency": "3.2 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Adreno 740"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "3 ГБ",
+      "internal_storage": "256 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "50+50+50 Мп",
+      "aperture": "1.9, 2.0, 2.2",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "30 x",
+      "optical_zoom": "3 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "30-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "32 Мп",
+      "aperture": "2.5",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": true,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "80 ч",
+      "video_playback_time": "20 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Xiao AI, кнопка AI, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "74.6 мм",
+      "height": "161.3 мм",
+      "thickness": "8.1 мм",
+      "weight": "204 г"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Смартфон OnePlus 12 Pro",
+    "price": 90000,
+    "oldPrice": 100000,
+    "popularity": 8,
+    "reviews": 70,
+    "rating": 4.9,
+    "image": ["path/to/image4.jpg"],
+    "discount": 10,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "OnePlus 12 Pro",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "зеленый",
+      "edge_color": "зеленый",
+      "manufacturer_color": "Emerald Green"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.7\"",
+      "resolution": "3168x1440",
+      "technology": "Fluid AMOLED",
+      "matrix_type": "Fluid Display",
+      "brightness": "1300 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "525 ppi",
+      "aspect_ratio": "20:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "Qualcomm Snapdragon 8 Gen 3",
+      "core_count": 8,
+      "max_frequency": "3.2 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Adreno 740"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "3 ГБ",
+      "internal_storage": "256 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "50+48+8 Мп",
+      "aperture": "1.8, 2.2, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "30 x",
+      "optical_zoom": "3 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "30-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "32 Мп",
+      "aperture": "2.4",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "85 ч",
+      "video_playback_time": "22 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Google Assistant, кнопка Alert Slider, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "73.4 мм",
+      "height": "163 мм",
+      "thickness": "8.7 мм",
+      "weight": "207 г"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Google Pixel 8 Pro",
+    "price": 85000,
+    "oldPrice": 95000,
+    "popularity": 5,
+    "reviews": 70,
+    "rating": 4.8,
+    "image": ["path/to/image5.jpg"],
+    "discount": 10,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Google Pixel 8 Pro",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "белый",
+      "edge_color": "серебристый",
+      "manufacturer_color": "Snow"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.7\"",
+      "resolution": "3120x1440",
+      "technology": "OLED",
+      "matrix_type": "Smooth Display",
+      "brightness": "1500 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "512 ppi",
+      "aspect_ratio": "19.5:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "Google Tensor G3",
+      "core_count": 8,
+      "max_frequency": "2.8 ГГц",
+      "process_technology": "5 нм",
+      "GPU": "Mali-G710"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "4 ГБ",
+      "internal_storage": "512 ГБ",
+      "memory_card_slot": false
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "50+48+12 Мп",
+      "aperture": "1.8, 2.2, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "30 x",
+      "optical_zoom": "4 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "30-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "12 Мп",
+      "aperture": "2.2",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "75 ч",
+      "video_playback_time": "20 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Google Assistant, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "75.5 мм",
+      "height": "162.3 мм",
+      "thickness": "8.9 мм",
+      "weight": "213 г"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Huawei P60 Pro",
+    "price": 80000,
+    "oldPrice": 90000,
+    "popularity": 9,
+    "reviews": 90,
+    "rating": 4.8,
+    "image": ["path/to/image6.jpg"],
+    "discount": 11,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Huawei P60 Pro",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "черный",
+      "edge_color": "черный",
+      "manufacturer_color": "Obsidian Black"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.6\"",
+      "resolution": "2700x1224",
+      "technology": "OLED",
+      "matrix_type": "Quad-Curved Display",
+      "brightness": "1500 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "458 ppi",
+      "aspect_ratio": "19.5:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Kunlun Glass",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": false,
+      "processor_model": "Huawei Kirin 9000",
+      "core_count": 8,
+      "max_frequency": "3.13 ГГц",
+      "process_technology": "5 нм",
+      "GPU": "Mali-G78"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "3 ГБ",
+      "internal_storage": "512 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "50+50+13 Мп",
+      "aperture": "1.9, 2.2, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "50 x",
+      "optical_zoom": "10 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "50-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "13 Мп",
+      "aperture": "2.4",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.2",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": true,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "80 ч",
+      "video_playback_time": "20 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Celia, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "74.5 мм",
+      "height": "161 мм",
+      "thickness": "8.3 мм",
+      "weight": "200 г"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Смартфон Sony Xperia 1 V",
+    "price": 75000,
+    "oldPrice": 85000,
+    "popularity": 5,
+    "reviews": 70,
+    "rating": 4.0,
+    "image": ["path/to/image7.jpg"],
+    "discount": 12,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Sony Xperia 1 V",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "черный",
+      "edge_color": "черный",
+      "manufacturer_color": "Frosted Black"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.5\"",
+      "resolution": "3840x1644",
+      "technology": "OLED",
+      "matrix_type": "4K HDR OLED",
+      "brightness": "1300 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "643 ppi",
+      "aspect_ratio": "21:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP65/IP68",
+      "notch_type": "без выреза"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "Qualcomm Snapdragon 8 Gen 3",
+      "core_count": 8,
+      "max_frequency": "3.2 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Adreno 740"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "3 ГБ",
+      "internal_storage": "512 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "52+12+12 Мп",
+      "aperture": "1.7, 2.2, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "124°",
+      "optical_stabilization": true,
+      "digital_zoom": "20 x",
+      "optical_zoom": "3 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "20-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "12 Мп",
+      "aperture": "2.3",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "3.5 мм",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "85 ч",
+      "video_playback_time": "22 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Google Assistant, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "71 мм",
+      "height": "165 мм",
+      "thickness": "8.3 мм",
+      "weight": "187 г"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Смартфон Oppo Find X6 Pro",
+    "price": 70000,
+    "oldPrice": 80000,
+    "popularity": 8,
+    "reviews": 90,
+    "rating": 4.8,
+    "image": ["path/to/image8.jpg"],
+    "discount": 12,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Oppo Find X6 Pro",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "зеленый",
+      "edge_color": "зеленый",
+      "manufacturer_color": "Emerald Green"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.73\"",
+      "resolution": "3168x1440",
+      "technology": "AMOLED",
+      "matrix_type": "LTPO",
+      "brightness": "1500 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "525 ppi",
+      "aspect_ratio": "20:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "MediaTek Dimensity 9200",
+      "core_count": 8,
+      "max_frequency": "3.05 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Mali-G715"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "3 ГБ",
+      "internal_storage": "256 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "50+50+12 Мп",
+      "aperture": "1.8, 2.2, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "60 x",
+      "optical_zoom": "5 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "60-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "32 Мп",
+      "aperture": "2.5",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "85 ч",
+      "video_playback_time": "22 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Breeno, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "75.3 мм",
+      "height": "163.6 мм",
+      "thickness": "8.8 мм",
+      "weight": "218 г"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Смартфон Vivo X90 Pro+",
+    "price": 65000,
+    "oldPrice": 75000,
+    "popularity": 8,
+    "reviews": 80,
+    "rating": 4.7,
+    "image": ["path/to/image9.jpg"],
+    "discount": 13,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Vivo X90 Pro+",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "черный",
+      "edge_color": "черный",
+      "manufacturer_color": "Cosmic Black"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.78\"",
+      "resolution": "3200x1440",
+      "technology": "AMOLED",
+      "matrix_type": "E5 AMOLED",
+      "brightness": "1500 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "517 ppi",
+      "aspect_ratio": "20:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "MediaTek Dimensity 9200",
+      "core_count": 8,
+      "max_frequency": "3.05 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Mali-G715"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "4 ГБ",
+      "internal_storage": "512 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 4,
+      "megapixels": "50+50+8+8 Мп",
+      "aperture": "1.8, 2.2, 2.4, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "60 x",
+      "optical_zoom": "5 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "60-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "32 Мп",
+      "aperture": "2.5",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "80 ч",
+      "video_playback_time": "20 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Jovi, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "75.2 мм",
+      "height": "164.4 мм",
+      "thickness": "9.3 мм",
+      "weight": "215 г"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Смартфон Realme GT 5",
+    "price": 60000,
+    "oldPrice": 70000,
+    "popularity": 7,
+    "reviews": 80,
+    "rating": 4.5,
+    "image": ["path/to/image10.jpg"],
+    "discount": 14,
+    "inStock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Realme GT 5",
+      "release_year": 2024
+    },
+    "appearance": {
+      "back_color": "синий",
+      "edge_color": "синий",
+      "manufacturer_color": "Neon Blue"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 600 (B71), FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B14), FDD-LTE 700 (B17), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 600 (B71), FDD-5G 700 (B12), FDD-5G 700 (B14), FDD-5G 700 (B28), FDD-5G 700 (B29), FDD-5G 800 (B20), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.7\"",
+      "resolution": "2400x1080",
+      "technology": "AMOLED",
+      "matrix_type": "Super AMOLED",
+      "brightness": "1200 Кд/м²",
+      "refresh_rate": "120 Гц",
+      "pixel_density": "393 ppi",
+      "aspect_ratio": "20:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "стекло, алюминий",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Corning Gorilla Glass Victus",
+      "IP_rating": "IP68",
+      "notch_type": "каплевидный"
+    },
+    "OS_and_processor": {
+      "OS": "Android",
+      "OS_version": "Android 14",
+      "Google_Mobile_Services": true,
+      "processor_model": "Qualcomm Snapdragon 8 Gen 3",
+      "core_count": 8,
+      "max_frequency": "3.2 ГГц",
+      "process_technology": "4 нм",
+      "GPU": "Adreno 740"
+    },
+    "memory": {
+      "RAM": "12 ГБ",
+      "virtual_RAM_expansion": "3 ГБ",
+      "internal_storage": "256 ГБ",
+      "memory_card_slot": true
+    },
+    "main_camera": {
+      "camera_count": 3,
+      "megapixels": "50+50+13 Мп",
+      "aperture": "1.8, 2.2, 2.4",
+      "autofocus": true,
+      "flash_type": "одинарная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "30 x",
+      "optical_zoom": "3 x",
+      "features": "оптическая стабилизация изображения, лазерный автофокус, ещё",
+      "photo_modes": "ночной режим, панорамная съемка, портретная съемка, режим про, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K, Ultra HD 8K",
+        "resolutions": "1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), 3840x2160 (24 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "30-кратный цифровой зум",
+        "features": "оптическая стабилизация изображения, запись видео в стандарте HDR10+, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "32 Мп",
+      "aperture": "2.4",
+      "autofocus": true,
+      "flash": false,
+      "video_resolutions": "1920x1080 (30 кадр./сек.), 3840x2160 (30 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, запись видео в стандарте 4K, ещё",
+      "modes": "ночной режим, портретная съемка, режим про, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AAC, FLAC, MP3, WAV"
+    },
+    "communications": {
+      "bluetooth_version": "5.3",
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax), 7 (802.11be)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Direct, Wi-Fi Hotspot"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "USB Type-C",
+      "headphone_jack": "USB Type-C",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, сканер отпечатков пальцев"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "wireless_charging": true,
+      "music_playback_time": "80 ч",
+      "video_playback_time": "20 ч"
+    },
+    "additional_info": {
+      "biometric_security": "сканер отпечатков пальцев, распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель USB Type-C",
+      "LED_indicator": false,
+      "additional_features": "4 микрофона, голосовой помощник Realme UI, ещё"
+    },
+    "dimensions_and_weight": {
+      "width": "74.3 мм",
+      "height": "162.9 мм",
+      "thickness": "8.1 мм",
+      "weight": "189 г"
+    }
+  }
+]

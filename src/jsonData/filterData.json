@@ -1,0 +1,210 @@
+[
+  {
+    "id":1,
+    "label": "Цена, ₽",
+    "filterName": "priceRange",
+    "priceRange": [0, 200000],
+    "type": "range",
+    "searchBare": false
+  },
+  {
+    "id":2,
+    "label": "Встроенная память",
+    "filterName": "memoryOptions",
+    "options": [
+      {
+        "id": 1,
+        "label": "64 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 2,
+        "label": "128 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 3,
+        "label": "256 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 4,
+        "label": "512 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 5,
+        "label": "1 ТБ",
+        "isChecked": false
+      }
+    ],
+    "type": "checkbox",
+    "searchBare": false
+  },
+  {
+    "id":3,
+    "label": "Оперативная память",
+    "filterName": "storageOptions",
+    "options": [
+      {
+        "id": 1,
+        "label": "4 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 2,
+        "label": "6 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 3,
+        "label": "8 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 4,
+        "label": "12 ГБ",
+        "isChecked": false
+      },
+      {
+        "id": 5,
+        "label": "16 ГБ",
+        "isChecked": false
+      }
+    ],
+    "type": "checkbox",
+    "searchBare": true
+  },
+  {
+    "id": 4,
+    "label": "Бренды",
+    "filterName": "brands",
+    "options": [
+      {
+        "id": 1,
+        "label": "Apple",
+        "isChecked": false
+      },
+      {
+        "id": 2,
+        "label": "Samsung",
+        "isChecked": false
+      },
+      {
+        "id": 3,
+        "label": "Xiaomi",
+        "isChecked": false
+      },
+      {
+        "id": 4,
+        "label": "OnePlus",
+        "isChecked": false
+      },
+      {
+        "id": 5,
+        "label": "Realme",
+        "isChecked": false
+      },
+      {
+        "id":6,
+        "label": "OnePlus",
+        "isChecked": false
+      },
+      {
+        "id":7,
+        "label": "Google Pixel",
+        "isChecked": false
+      },
+      {
+        "id":8,
+        "label": "Huawei",
+        "isChecked": false
+      },
+      {
+        "id":9,
+        "label": "Sony",
+        "isChecked": false
+      },
+      {
+        "id":10,
+        "label": "Oppo",
+        "isChecked": false
+      },
+      {
+        "id":11,
+        "label": "Vivo",
+        "isChecked": false
+      }
+    ],
+    "type": "checkbox",
+    "searchBare": true
+  },
+  {
+    "id":5,
+    "label": "Количество ядер",
+    "filterName": "numberCores",
+    "options": [
+      {
+        "id": 1,
+        "label": "4",
+        "isChecked": false
+      },
+      {
+        "id": 2,
+        "label": "6",
+        "isChecked": false
+      },
+      {
+        "id": 3,
+        "label": "8",
+        "isChecked": false
+      },
+      {
+        "id": 4,
+        "label": "12",
+        "isChecked": false
+      },
+      {
+        "id": 5,
+        "label": "16",
+        "isChecked": false
+      }
+    ],
+    "type": "checkbox",
+    "searchBare": false
+  },
+  {
+    "id":6,
+    "label": "Годы",
+    "filterName": "years",
+    "options": [
+      {
+        "id": 1,
+        "label": "2020",
+        "isChecked": false
+      },
+      {
+        "id": 2,
+        "label": "2021",
+        "isChecked": false
+      },
+      {
+        "id": 3,
+        "label": "2022",
+        "isChecked": false
+      },
+      {
+        "id": 4,
+        "label": "2023",
+        "isChecked": false
+      },
+      {
+        "id": 5,
+        "label": "2024",
+        "isChecked": false
+      }
+    ],
+    "type": "checkbox",
+    "searchBare": false
+  }
+]

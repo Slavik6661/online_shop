@@ -1,0 +1,49 @@
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../../redux/store";
+import { removeFromCart } from "../../redux/slices/cartSlice";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  IconButton,
+  Typography,
+} from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+
+const Cart: React.FC = () => {
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const dispatch = useDispatch();
+  const handleRemoveFromCart = (id: string) => {
+    dispatch(removeFromCart(id));
+  };
+  return (
+    // <div>
+    //   <Typography variant="h4" gutterBottom>
+    //     Cart
+    //   </Typography>
+    //   <List>
+    //     {cartItems.map((item) => (
+    //       <ListItem key={item.id}>
+    //         <ListItemText
+    //           primary={item.name}
+    //           secondary={`$${item.price} x ${item.quantity}`}
+    //         />
+    //         <ListItemSecondaryAction>
+    //           <IconButton
+    //             edge="end"
+    //             aria-label="delete"
+    //             onClick={() => handleRemoveFromCart(item.id)}
+    //           >
+    //             <DeleteIcon />
+    //           </IconButton>
+    //         </ListItemSecondaryAction>
+    //       </ListItem>
+    //     ))}
+    //   </List>
+    // </div>
+  );
+};
+
+export default Cart;

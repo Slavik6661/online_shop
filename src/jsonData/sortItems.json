@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "value": "Сначала популярные",
+    "sortKey": "popularity",
+    "order": "desc"
+  },
+  { "id": 2, "value": "Сначала недорогие", "sortKey": "price", "order": "asc" },
+  { "id": 3, "value": "Сначала дорогие", "sortKey": "price", "order": "desc" },
+  { "id": 4, "value": "По скидке(%)", "sortKey": "discount", "order": "desc" },
+  {
+    "id": 5,
+    "value": "По количеству отзывов",
+    "sortKey": "reviews",
+    "order": "desc"
+  },
+  {
+    "id": 6,
+    "value": "Сначала с лучшей оценкой",
+    "sortKey": "rating",
+    "order": "desc"
+  }
+]
