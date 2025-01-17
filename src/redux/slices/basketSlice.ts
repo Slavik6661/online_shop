@@ -1,31 +1,24 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
+import { Product } from "../../interfaces/Iproducts/products";
 
-interface BasketItem {
-  id: string|number;
-  name: string;
-  image: string[];
-  oldPrice: number;
-  discount?: number|null;
-  inStock: boolean;
-  price: number;
-  quantity: number;
-}
 interface BasketState {
-  items: BasketItem[];
+  items: Product[];
   totalPrice: number;
 }
+
 const initialState: BasketState = {
   items: [],
   totalPrice: 0,
 };
+
 const basketSlice = createSlice({
   name: "basket",
   initialState,
   reducers: {
-    addItem: (state, action: PayloadAction<BasketItem>) => {
+    addItem: (state, action: PayloadAction<Product>) => {
       const findItem = state.items.find(
-        (item) => item.id === action.payload.id
+        (item: Product) => item.id === action.payload.id
       );
       if (findItem) {
         findItem.quantity += action.payload.quantity;
@@ -37,7 +30,7 @@ const basketSlice = createSlice({
 
     removeItem: (state, action: PayloadAction<{ id:number}>) => {
       const itemIndex = state.items.findIndex(
-        (item) => item.id === action.payload.id
+        (item: Product) => item.id === action.payload.id
       );
 
       if (itemIndex !== -1) {

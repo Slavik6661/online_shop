@@ -1,12 +1,12 @@
 import { Breadcrumbs, Link, Typography } from "@mui/material";
 import { useLocation, Link as RouterLink } from "react-router-dom";
 
-import { selectCategories } from "../../redux/slices/categoriesSlice";
+import { selectCategoriesItems } from "../../redux/slices/categoriesSlice";
 import { useAppSelector } from "../../redux/hooks/hooks";
 
 const CustomBreadcrumbs = () => {
   const location = useLocation();
-  const categories = useAppSelector(selectCategories);
+  const categories = useAppSelector(selectCategoriesItems);
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   const filteredPathnames = pathnames.filter((value) =>

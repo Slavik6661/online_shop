@@ -1,5 +1,5 @@
 import { Pagination } from "@mui/material";
-import { FC, useState } from "react";
+import { FC } from "react";
 
 interface PaginationComponentProps {
   currentPage: number;

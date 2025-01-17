@@ -1,3 +1,4 @@
+import { Specifications } from "./IsmartPhone/smartPhoneSpecifications";
 interface BaseProduct {
     id: number;
     name: string;
@@ -12,6 +13,10 @@ interface BaseProduct {
     warranty: string;
     country: string;
     type: string;
+    isOnSale: boolean;
+    quantity: number;
+    description: string;
+    specifications:Specifications; 
 }
 
 export default BaseProduct

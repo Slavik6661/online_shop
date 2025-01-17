@@ -1,27 +1,37 @@
-import { FC } from "react";
+import { useEffect, useState } from "react";
 import { AccordionGroup } from "@mui/joy";
-import filterData from "../../jsonData/filterData.json";
 import { CssVarsProvider } from "@mui/joy/styles";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooks";
+import { selectThisCategory } from "../../redux/slices/categoriesSlice";
+import {
+  fetchFilterProductData,
+  filterProductSelector,
+} from "../../redux/slices/filterProductSlice";
+import { IFilterItem } from "../../interfaces/filterProduct/IfilterProduct";
 import FilterItem from "./FilterItem";
 
-interface FilterGroupProps {
-  filterData: {
-    id: number;
-    filterName: string;
-    label: string;
-    options?: { id: number; label: string; isChecked: boolean }[];
-    priceRange?: number[];
-    type: string;
-    searchBare?: boolean;
-  }[];
-}
+const FilterGroup = () => {
+  const dispatch = useAppDispatch();
 
-const FilterGroup: FC<FilterGroupProps> = ({ filterData }) => {
-  console.log("filterData", filterData);
+  const thisCategory = useAppSelector(selectThisCategory);
+  const filterData = useAppSelector(filterProductSelector);
+
+  const [filterItem, setFilterItem] = useState<IFilterItem[]>([]);
+
+  useEffect(() => {
+    if (thisCategory?.type) {
+      dispatch(fetchFilterProductData({ category: thisCategory.type }));
+    }
+  }, [dispatch, thisCategory?.type]);
+
+  useEffect(() => {
+    setFilterItem(filterData);
+  }, [filterData]);
+
   return (
     <CssVarsProvider>
       <AccordionGroup sx={{ maxWidth: 400 }}>
-        {filterData.map((item) => (
+        {filterItem.map((item) => (
           <FilterItem key={item.id} {...item} />
         ))}
       </AccordionGroup>

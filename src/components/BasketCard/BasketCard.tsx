@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Box, CssVarsProvider } from "@mui/joy";
-import { Product } from "../../interfaces/products";
 import {
   Smartphone,
   Laptop,
@@ -11,17 +10,22 @@ import {
   GamingConsole,
   VacuumCleaner,
   Speaker,
-} from "../../interfaces/types";
+} from "../../interfaces/Iproducts/types";
+import { Product } from "../../interfaces/Iproducts/products";
 
 // Детализированные компоненты для каждого типа продукта
-const SmartphoneDetails: FC<{ item: Smartphone }> = ({ item }) => (
+const SmartphoneDetails: FC<{ item: Smartphone }> = ({
+  item,
+}: {
+  item: Smartphone;
+}) => (
   <>
     <p>Display: {item.display.resolution}</p>
     <p>Battery: {item.power.battery_capacity}</p>
   </>
 );
 
-const LaptopDetails: FC<{ item: Laptop }> = ({ item }) => (
+const LaptopDetails: FC<{ item: Laptop }> = ({ item }: { item: Laptop }) => (
   <>
     <p>Processor: {item.processor.model}</p>
     <p>Memory: {item.memory.capacity}</p>
@@ -57,9 +61,12 @@ interface BasketCardProps {
   basketItem: Product;
 }
 
-const BasketCard: FC<BasketCardProps> = ({ basketItem }) => {
-  const ProductDetailsComponent = productDetailsMap[basketItem.type];
+// Определяем допустимые типы продуктов
+type ProductType = "smartphone" | "laptop" | "smartwatch" | "tv";
 
+const BasketCard: FC<BasketCardProps> = ({ basketItem }) => {
+  const ProductDetailsComponent =
+    productDetailsMap[basketItem.type as ProductType];
   return (
     <CssVarsProvider>
       <Box sx={{ display: "flex" }}>

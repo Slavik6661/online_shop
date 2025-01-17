@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 interface BackLinkCardProps {
   isMobile: boolean;
   text?: string;
@@ -9,6 +10,7 @@ const BackLinkCard: React.FC<BackLinkCardProps> = ({
   text,
   link,
 }) => {
+  const navigate = useNavigate();
   const icon = "/other/arrowLeft.svg";
   return (
     <>
@@ -52,28 +54,33 @@ const BackLinkCard: React.FC<BackLinkCardProps> = ({
         </Box>
       ) : (
         <Box
-          sx={{ display: "flex", alignItems: "center", fontSize: "xx-large" }}
+          sx={{
+            display: "flex",
+            width: "fit-content",
+            alignItems: "center",
+            fontSize: "x-large",
+            paddingBottom: "20px",
+            "&:hover": {
+              cursor: "pointer",
+            },
+          }}
+          onClick={() => navigate(link)}
         >
           <Box
-            onClick={() => console.log("click")}
             sx={{
               width: "50px",
               height: "50px",
               display: "flex",
               justifyContent: "end",
               alignItems: "center",
-              "&:hover": {
-                backgroundColor: "rgba(222, 222, 222, 0.5)",
-                borderRadius: "100%",
-              },
             }}
           >
             <Box
               component={"a"}
               href={link}
               sx={{
-                width: "40px",
-                height: "40px",
+                width: "18px",
+                height: "18px",
                 backgroundImage: `url(${icon})`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",

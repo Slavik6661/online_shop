@@ -1,91 +1,71 @@
-import { Box, CssVarsProvider, Select, Option, Typography } from "@mui/joy";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooks";
 import { useEffect, useState } from "react";
-
-import sortData from "../../jsonData/sortItems.json";
+import { Box, CssVarsProvider, Select, Option } from "@mui/joy";
+import useSortItems from "../../hooksComponents/useSortItems";
 import sort from "../../assets/mobilIcons/filtersProductsIcons/sort.svg";
-import {
-  selectSortedItems,
-  selectSortedProducts,
-  setSortConfig,
-} from "../../redux/slices/sortSlice";
-import { stat } from "fs";
+
+const styles = {
+  container: {
+    width: "100%",
+    height: "70px",
+    display: "flex",
+    justifyContent: "space-between",
+    gap: 2,
+  },
+  sortButtonContainer: {
+    minWidth: "20%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 2,
+  },
+  sortIcon: {
+    width: "10%",
+    height: "30px",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  },
+  select: {
+    flexGrow: 1,
+  },
+};
 
 const SortItemsDesktop = () => {
-  const dispatch = useAppDispatch();
-  const sortItems = useAppSelector(selectSortedItems);
-  const sortedProducts = useAppSelector(selectSortedProducts);
-
-  //   const sortedProducts = useAppSelector((state) => state.sort.sortedProducts);
-
-  const [seletctSortItem, setSelectedSortItem] = useState(0);
-  const [newSortProducts, setNewSortProducts] = useState<any>(sortedProducts);
-
-  const handleChange = (event: any, selectedSortId: any) => {
-    const selectedSortItem = sortItems.find(
-      (item) => item.id === selectedSortId
-    );
-    if (selectedSortItem) {
-      console.log(selectedSortItem);
-
-      dispatch(setSortConfig(selectedSortItem));
-      setNewSortProducts(sortedProducts);
-      console.log(newSortProducts);
-    }
-  };
+  const { sortedItemsList, handleChange, selectSortItem, isLoading } =
+    useSortItems();
 
   useEffect(() => {
-    handleChange(null, sortData[seletctSortItem].id);
-  }, []);
+    if (sortedItemsList.length > 0) {
+      handleChange(sortedItemsList[selectSortItem].id);
+    }
+  }, [sortedItemsList]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <>
-      <CssVarsProvider>
-        <Box
-          sx={{
-            width: "100%",
-            height: "70px",
-            display: "flex",
-            justifyContent: "space-between",
-            gap: 2,
-          }}
-        >
-          {/* Кнопка сортировки */}
+    <CssVarsProvider>
+      <Box sx={styles.container}>
+        {/* Кнопка сортировки */}
+        <Box sx={styles.sortButtonContainer}>
           <Box
-            sx={{
-              minWidth: "20%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 2,
-            }}
-            // onClick={handleOpenModalSort}
+            sx={{ ...styles.sortIcon, backgroundImage: `url(${sort})` }}
+          ></Box>
+
+          <Select
+            defaultValue={sortedItemsList[selectSortItem].id}
+            onChange={(event, value) => handleChange(value as number)}
+            sx={styles.select}
           >
-            <Box
-              sx={{
-                width: "10%",
-                height: "30px",
-                backgroundImage: `url(${sort})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Box>
-            <Select
-              defaultValue={sortData[seletctSortItem].id}
-              onChange={handleChange}
-              sx={{
-                flexGrow: 1,
-              }}
-            >
-              {sortItems.map((item) => (
-                <Option key={item.id} value={item.id}>
-                  {item.value}
-                </Option>
-              ))}
-            </Select>
-          </Box>
+            {sortedItemsList.map((item) => (
+              <Option key={item.id} value={item.id}>
+                {item.value}
+              </Option>
+            ))}
+          </Select>
         </Box>
-      </CssVarsProvider>
-    </>
+      </Box>
+    </CssVarsProvider>
   );
 };
 

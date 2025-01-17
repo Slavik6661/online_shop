@@ -1,265 +1,160 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../redux/hooks/hooks";
-import Header from "../components/HeaderComponents/Header";
-import Filter from "../components/FilterMenu/Filter";
-import CustomBreadcrumbs from "../components/CustomBreadcrumbs/CustomBreadcrumbs";
+
 import { Box } from "@mui/material";
-import BackLinkCard from "../components/BackLinkCard/BackLinkCard";
-import { Pagination, useMediaQuery, useTheme } from "@mui/material";
-import SortAndFilterPanel from "../components/SortAndFilterPanel/SortAndFilterPanel";
-import ProductListCard from "../components/ProductList/ProductListCard";
-import PaginationComponent from "../components/Pagination/Pagination";
-import vid1 from "../assets/ViewingModeIcons/list-1.svg";
-import vid2 from "../assets/ViewingModeIcons/list.svg";
-import SortItemsDesktop from "../components/SortAndFilterPanel/SortItemsDesktop";
-import { selectSortedProducts } from "../redux/slices/sortSlice";
+import { useMediaQuery, useTheme } from "@mui/material";
+
+import {
+  selectSortedProducts,
+  featchSortItems,
+} from "../redux/slices/sortSlice";
+import { selectThisCategory } from "../redux/slices/categoriesSlice";
+import MobileProductCatalog from "../components/ProductCatalog/MobileProductCatalog";
+import DesktopProductCatalog from "../components/ProductCatalog/DesktopProductCatalog";
+
+import {
+  viewModeGridActive,
+  viewModeGridNotActive,
+  viewModeListActive,
+  viewModeListNotActive,
+} from "../assets/ViewingModeIcons";
+import {
+  featchProduct,
+  getProductsByCategorySlice,
+} from "../redux/slices/getProductSlice";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "center",
+  },
+
+  contentWrapper: (isMobile: boolean) => ({
+    display: "flex",
+    width: isMobile ? "100vw" : "90vw",
+    justifyContent: "center",
+    flexDirection: "column",
+    paddingBottom: isMobile ? "60px" : "0px",
+  }),
+
+  viewModeSwitcher: {
+    display: "flex",
+    gap: "20px",
+    padding: "10px",
+    cursor: "pointer",
+  },
+
+  viewModeSwitcherItem: {
+    cursor: "pointer",
+    padding: "10px",
+    "&:hover": {
+      backgroundColor: "#cfc5c170",
+      borderRadius: "5px",
+    },
+  },
+
+  productListContainer: {
+    flexGrow: 1,
+    borderTop: "1px solid #bebdfff2",
+    paddingTop: "16px",
+  },
+
+  pagination: {
+    display: "flex",
+    justifyContent: "center",
+    padding: "30px",
+  },
+};
 
 const ProductCatalog = () => {
-  const dispatch = useAppDispatch();
-  // const { items, status } = useAppSelector((state) => state.categories);
-
   const theme = useTheme();
+  const dispatch = useAppDispatch();
+
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   const sortedProducts = useAppSelector(selectSortedProducts);
+  const selectedCategory = useAppSelector(selectThisCategory)?.type;
 
+  //Вынести логику в Store
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const ITEMS_PER_PAGE = 8;
+
+  const filteredProducts = useMemo(() => {
+    if (!selectedCategory) return sortedProducts;
+    return sortedProducts.filter(
+      (product) => product.type === selectedCategory
+    );
+  }, [sortedProducts, selectedCategory]);
 
   const totalPages = useMemo(
-    () => Math.ceil(sortedProducts.length / itemsPerPage),
-    [sortedProducts, itemsPerPage]
+    () => Math.ceil(filteredProducts.length / ITEMS_PER_PAGE),
+    [filteredProducts, ITEMS_PER_PAGE]
   );
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
 
   const currentItems = useMemo(
-    () => sortedProducts.slice(startIndex, endIndex),
-    [sortedProducts, startIndex, endIndex]
+    () => filteredProducts.slice(startIndex, endIndex),
+    [filteredProducts, startIndex, endIndex]
   );
 
-  // useEffect(() => {
-  //   dispatch(fetchCategories());
-  //   console.log(items);
-  // }, [items]);
+  useEffect(() => {
+    if (selectedCategory) {
+      dispatch(featchProduct({ category: selectedCategory }));
+    }
+  }, []);
 
-  return (
-    <>
-      {isMobile ? (
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Box
-            sx={{
-              display: "flex",
-              width: "100vw",
-              justifyContent: "center",
-              flexDirection: "column",
-              paddingBottom: isMobile ? "60px" : "0px",
-            }}
-          >
-            <Header />
-            <Box>
-              <Box>
-                <CustomBreadcrumbs />
-                <Box sx={{ margin: "0px 25px" }}>
-                  <BackLinkCard isMobile text="Главная" link="/" />
-                </Box>
-                <SortAndFilterPanel />
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: { xs: "сolumn", md: "row" },
-                    gap: "40px",
-                  }}
-                >
-                  <ProductListCard items={currentItems} />
-                </Box>
-                <PaginationComponent
-                  currentPage={currentPage}
-                  totalPages={totalPages}
-                  onPageChange={(event, page) => setCurrentPage(page)}
-                />
-              </Box>
-            </Box>
-          </Box>
-        </Box>
-      ) : (
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Box
-            sx={{
-              display: "flex",
-              width: "90vw",
-              justifyContent: "center",
-              flexDirection: "column",
-              paddingBottom: isMobile ? "60px" : "0px",
-            }}
-          >
-            <Header />
-            <Box>
-              <Box>
-                <CustomBreadcrumbs />
-                <BackLinkCard isMobile text="Главная" link="/" />
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "10px",
-                    paddingBottom: "25px",
-                  }}
-                >
-                  <SortItemsDesktop />
-                  <Box
-                    sx={{
-                      display: "flex",
-                      gap: "20px",
-                      padding: "25px",
-                      cursor: "pointer",
-                    }}
-                  >
-                    <img src={vid2} alt="arrowLeft" />
-                    <img src={vid1} alt="arrowLeft" />
-                  </Box>
-                </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: { xs: "сolumn", md: "row" },
-                    gap: "40px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: { xs: "none", md: "block" },
-                    }}
-                  >
-                    <Filter />
-                  </Box>
+  useEffect(() => {
+    dispatch(featchSortItems());
+  }, []);
 
-                  <Box
-                    sx={{
-                      flexGrow: 1,
-                      borderTop: "1px solid #bebdfff2",
-                      paddingTop: "16px",
-                    }}
-                  >
-                    <ProductListCard items={currentItems} />
-                    <Pagination
-                      onChange={(event, page) => setCurrentPage(page)}
-                      count={totalPages}
-                      page={currentPage}
-                      color="primary"
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        padding: "30px",
-                      }}
-                    />
-                  </Box>
-                </Box>
-              </Box>
-            </Box>
-          </Box>
-        </Box>
-      )}
-    </>
+  //Вынести логику в Store
+  const handlePageChange = (
+    event: React.ChangeEvent<unknown>,
+    page: number
+  ) => {
+    setCurrentPage(page);
+  };
+
+  const ViewModeSwitcher = () => (
+    <Box sx={styles.viewModeSwitcher}>
+      <Box
+        component="img"
+        src={viewMode === "list" ? viewModeListActive : viewModeListNotActive}
+        alt="list-arrowLeft"
+        onClick={() => setViewMode("list")}
+        sx={styles.viewModeSwitcherItem}
+      />
+      <Box
+        component="img"
+        src={viewMode === "grid" ? viewModeGridActive : viewModeGridNotActive}
+        alt="grid-arrowLeft"
+        onClick={() => setViewMode("grid")}
+        sx={styles.viewModeSwitcherItem}
+      />
+    </Box>
+  );
+
+  return isMobile ? (
+    <MobileProductCatalog
+      currentItems={currentItems}
+      totalPages={totalPages}
+      currentPage={currentPage}
+      viewMode={viewMode}
+      handlePageChange={handlePageChange}
+    />
+  ) : (
+    <DesktopProductCatalog
+      currentItems={currentItems}
+      totalPages={totalPages}
+      currentPage={currentPage}
+      ViewModeSwitcher={ViewModeSwitcher}
+      viewMode={viewMode}
+      handlePageChange={handlePageChange}
+    />
   );
 };
 
 export default ProductCatalog;
-
-{
-  /* <ProductPageLayout isMobile={isMobile}>
-{isMobile ? (
-  <Box sx={{ display: "flex", justifyContent: "center" }}>
-    <Box
-      sx={{
-        display: "flex",
-        width: "100vw",
-        justifyContent: "center",
-        flexDirection: "column",
-        paddingBottom: isMobile ? "60px" : "0px",
-      }}
-    >
-      <Header />
-      <Box>
-        <Box>
-          <CustomBreadcrumbs />
-          <Box sx={{ margin: "0px 25px" }}>
-            <BackLinkCard isMobile text="Главная" link="/" />
-          </Box>
-          <SortAndFilterPanel />
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "сolumn", md: "row" },
-              gap: "40px",
-            }}
-          >
-            <ProductListCard items={currentItems} />
-          </Box>
-          <PaginationComponent
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={(event, page) => setCurrentPage(page)}
-          />
-        </Box>
-      </Box>
-    </Box>
-  </Box>
-) : (
-  <Box sx={{ display: "flex", justifyContent: "center" }}>
-    <Box
-      sx={{
-        display: "flex",
-        width: "90vw",
-        justifyContent: "center",
-        flexDirection: "column",
-        paddingBottom: isMobile ? "60px" : "0px",
-      }}
-    >
-      <Header />
-      <Box>
-        <Box>
-          <CustomBreadcrumbs />
-          <BackLinkCard isMobile text="Главная" link="/" />
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "сolumn", md: "row" },
-              gap: "40px",
-            }}
-          >
-            <Box
-              sx={{
-                display: { xs: "none", md: "block" },
-              }}
-            >
-              <Filter />
-            </Box>
-
-            <Box
-              sx={{
-                flexGrow: 1,
-              }}
-            >
-              <ProductListCard items={currentItems} />
-              <Pagination
-                onChange={(event, page) => setCurrentPage(page)}
-                count={totalPages}
-                page={currentPage}
-                color="primary"
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "30px",
-                }}
-              />
-            </Box>
-          </Box>
-        </Box>
-      </Box>
-    </Box>
-  </Box>
-)}
-</ProductPageLayout> */
-}

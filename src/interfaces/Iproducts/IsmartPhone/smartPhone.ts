@@ -1,4 +1,4 @@
-import  BaseProduct  from "./baseProduct";
+import  BaseProduct  from "../baseProduct";
 
 export interface Smartphone extends BaseProduct {
   general: SmartphoneGeneral;

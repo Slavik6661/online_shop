@@ -3,15 +3,21 @@ import ScrollBarList from "../ScrollBarList/ScrollBarList";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooks";
 import { useNavigate } from "react-router-dom";
 import {
-  fetchCategories,
-  selectCategories,
+  selectCategoriesItems,
+  setSelectedCategory,
 } from "../../redux/slices/categoriesSlice";
 
 const Catalog: React.FC = () => {
-  const categories = useAppSelector(selectCategories);
+  const dispatch = useAppDispatch();
+  const categories = useAppSelector(selectCategoriesItems);
 
   const navigate = useNavigate();
   const theme = useTheme();
+
+  const handleClick = (id: number) => {
+    dispatch(setSelectedCategory(id));
+    navigate(`/catalog/${id}`);
+  };
 
   return (
     <>
@@ -36,7 +42,7 @@ const Catalog: React.FC = () => {
           {categories.map((category) => (
             <Box
               key={category.id}
-              onClick={() => navigate(`/catalog/${category.id}`)}
+              onClick={() => handleClick(category.id)}
               sx={{
                 flex: "0 0 auto",
                 width: { sx: "100px", md: "200px", sm: "200px" },

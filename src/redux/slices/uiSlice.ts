@@ -1,27 +1,29 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../store";
 
 export interface UiState {
-    modals: Record<string, boolean>
+  modals: Record<string, boolean>;
 }
 
 const initialState: UiState = {
-modals: {}
-}
+  modals: {},
+};
 
-const uiSlice =createSlice({
-    name:"ui",
-    initialState,
-    reducers:{
-            openModal:(state,actions:PayloadAction<string>)=>{
-                state.modals[actions.payload] = true
-            },
-        
-            closeModal:(state , actions:PayloadAction<string>)=>{
-               state.modals[actions.payload] = false
-            }
-    }
-})
+const uiSlice = createSlice({
+  name: "ui",
+  initialState,
+  reducers: {
+    openModal: (state, actions: PayloadAction<string>) => {
+      state.modals[actions.payload] = true;
+    },
 
-export const {openModal,closeModal} = uiSlice.actions
+    closeModal: (state, actions: PayloadAction<string>) => {
+      state.modals[actions.payload] = false;
+    },
+  },
+});
 
-export default uiSlice.reducer
+export const stateModal = (state: RootState) => state.ui.modals;
+export const { openModal, closeModal } = uiSlice.actions;
+
+export default uiSlice.reducer;

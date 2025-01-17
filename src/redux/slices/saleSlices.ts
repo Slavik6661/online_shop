@@ -1,26 +1,26 @@
 import { createSlice,createAsyncThunk } from  "@reduxjs/toolkit";
+import { Product } from "../../interfaces/Iproducts/products";
 import axios from "axios";
-import sales from "../../jsonData/sales.json";
-import { Product } from "../../interfaces/products";
-
 
   interface SalesState {
-    items: Product[];
+    products: Product[];
+    productsOnSale: Product[];
     status: "loading" | "success" | "error";
   }
   const initialState: SalesState = {
-    items: [],
+    products: [],
+    productsOnSale: [],
     status: "loading",
   };
 
 export const fetchSales = createAsyncThunk("categories/fetchSlases", async () => {
-    const response = await axios.get("https://jsonplaceholder.typicode.com/todos");
+    const response = await axios.get("http://localhost:3001/0");
     if(response.status !== 200){ 
         throw new Error(response.statusText);
     }
-    console.log('axios', sales);
+    console.log('axios sales', response.data.products);
     
-    return sales;
+    return  response.data.products;
 })
 
 const salesSlice = createSlice({
@@ -34,7 +34,8 @@ const salesSlice = createSlice({
             })
             .addCase(fetchSales.fulfilled, (state, action) => {
                 state.status = "success";
-                state.items = action.payload;
+                // state.products = action.payload;
+                state.productsOnSale = filterSaleProducts(action.payload);
             })
             .addCase(fetchSales.rejected, (state) => {
                 state.status = "error";
@@ -42,5 +43,25 @@ const salesSlice = createSlice({
     },
 });
 
-export const selectItemSales = (state:{ sales:SalesState }) => state.sales.items;
+const filterSaleProducts = (products: Product[]): Product[] => {
+    console.log('products sales', Object.values(products).flat());
+    products = Object.values(products).flat();
+    return products.map(item => ({
+        ...item,
+        quantity: 0
+    })).filter(item => item.isOnSale);
+}
+
+export const selectItemSales = (state:{ sales:SalesState }) => state.sales.productsOnSale;
 export default salesSlice.reducer
+
+
+// const allProducts = [
+//     ...action.payload[0].smartphone,
+//     ...action.payload[0].tv,
+//     ...action.payload[0].tablets,
+//     ...action.payload[0].headphones,
+//     ...action.payload[0].gamingConsoles,
+//     ...action.payload[0].vacuumCleaners,
+//     ...action.payload[0].speakers
+// ] as unknown as Product[];

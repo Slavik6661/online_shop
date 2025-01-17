@@ -1,72 +1,67 @@
 import { FC, useEffect, useState } from "react";
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  Button,
-  Box,
-  useTheme,
-  IconButton,
-} from "@mui/material";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import PaginationCardImg from "../PaginationCardImg/PginationCardImg";
+import { Box, Card, CardContent, Typography, useTheme } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooks";
 import {
   addItem,
   removeItem,
   selectBasketItems,
-  selectBasketTotalPrice,
 } from "../../redux/slices/basketSlice";
 
-import { Product } from "../../interfaces/products";
+import { Product } from "../../interfaces/Iproducts/products";
+import ImageCarousel from "./ImageCarousel";
+import PriceDisplay from "./PriceDisplay";
+import StockStatus from "./StockStatus";
+import ActionButton from "./ActionButton";
+import DiscountBadge from "./DiscountBage";
+// import { setProducts } from "../../redux/slices/selectProductSlice";
+import { useNavigate } from "react-router-dom";
 
 interface ProductCardProps {
   product: Product;
+  viewMode?: "grid" | "list";
 }
 
-export const ProductCard: FC<ProductCardProps> = ({ product }) => {
+type ProductCategory =
+  | "tv"
+  | "headphones"
+  | "smartPhones"
+  | "notebooks"
+  | "smartwatches"
+  | "tablets"
+  | "gamingConsoles"
+  | "vacuumCleaners"
+  | "speakers";
+
+export const ProductCard: FC<ProductCardProps> = ({ product, viewMode }) => {
   const dispatch = useAppDispatch();
   const items = useAppSelector(selectBasketItems);
-  const totalPrice = useAppSelector(selectBasketTotalPrice);
-
   const theme = useTheme();
-  const [isFavorite, setIsFavorite] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0);
-
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    const { clientX, currentTarget } = event;
-    const { left, width } = currentTarget.getBoundingClientRect();
-
-    const positionX = clientX - left;
-    const newIndex = Math.floor((positionX / width) * product.image.length);
-    setCurrentImage(
-      Math.min(newIndex, product.image.length - 1) === -1 ? 0 : newIndex
-    );
-  };
+  const navigate = useNavigate();
 
   useEffect(() => {}, [items]);
 
   const handleAddToCart = () => {
-    console.log("Add to cart");
     dispatch(
       addItem({
-        id: product.id,
-        name: product.name,
-        price: product.price,
+        ...product,
         quantity: 1,
-        image: product.image,
-        oldPrice: 0,
-        inStock: false,
       })
     );
   };
 
-  const handleToggleFavorite = () => {
-    setIsFavorite((prev) => !prev);
+  const handleRemoveFromCart = () => {
+    dispatch(removeItem({ id: product.id }));
   };
-  return (
+
+  const isProductInBasket = () =>
+    !!items.find((item) => item.id === product.id);
+
+  const handleClickOpenCard = () => {
+    navigate(`/product/${product.type}/${product.id}`);
+    // dispatch(setProducts(product));
+  };
+
+  return viewMode === "grid" ? (
     <Card
       sx={{
         width: "250px",
@@ -79,62 +74,9 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         },
       }}
     >
-      {product.discount && (
-        <Box
-          sx={{
-            position: "absolute",
-            width: "40px",
-            height: "40px",
-            textAlign: "center",
-            top: theme.spacing(1),
-            right: theme.spacing(1),
-            backgroundColor: theme.palette.primary.main,
-            color: "#fff",
-            borderRadius: "5px",
-            padding: theme.spacing(0.5),
-            zIndex: 1,
-            fontSize: "18px",
-          }}
-        >
-          {product.discount}
-        </Box>
-      )}
-
-      <Box
-        sx={{
-          position: "relative",
-          height: "300px",
-          transition: "transform 0.3s background-color 0.2s",
-          "&:hover": {
-            backgroundColor: "rgba(222, 222, 222, 0.5)",
-            transform: "scale(1.05)",
-          },
-        }}
-      >
-        {product.image.map((img, index) => (
-          <CardMedia
-            onMouseMove={handleMouseMove}
-            key={index}
-            component="img"
-            height="270px"
-            image={img}
-            alt={product.name}
-            sx={{
-              borderRadius: "10px 10px 0 0",
-              padding: "15px",
-              objectFit: "contain",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              opacity: currentImage === index ? 1 : 0,
-              transition: "opacity 0.3s ease-in-out",
-            }}
-          />
-        ))}
-        {/* {Пагинация} */}
-        <PaginationCardImg product={product} currentImage={currentImage} />
-        {/* {Пагинация} */}
+      {product.discount && <DiscountBadge discount={product.discount} />}
+      <Box onClick={handleClickOpenCard}>
+        <ImageCarousel product={product} />
       </Box>
 
       <CardContent sx={{ padding: theme.spacing(2) }}>
@@ -145,100 +87,98 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
           sx={{
             fontWeight: "bold",
             textAlign: "center",
-            whiteSpace: "nowrap",
+            whiteSpace: "pre-wrap",
             overflow: "hidden",
             textOverflow: "ellipsis",
+            fontSize: "1.10rem",
+            "&:hover": {
+              color: theme.palette.primary.main,
+            },
           }}
+          onClick={handleClickOpenCard}
         >
           {product.name}
         </Typography>
 
-        {/* **************************************Блок Новая цена старая цена************************************* */}
+        <PriceDisplay price={product.price} oldPrice={product.old_price} />
+        <StockStatus inStock={product.in_stock} product={product} />
+
+        <ActionButton
+          inBasket={isProductInBasket}
+          onAdd={handleAddToCart}
+          onRemove={handleRemoveFromCart}
+          disabled={!product.in_stock}
+        />
+      </CardContent>
+    </Card>
+  ) : (
+    <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        position: "relative",
+        borderRadius: "10px",
+        overflow: "hidden",
+        cursor: "pointer",
+        "&:hover": {
+          backgroundColor: "rgba(222, 222, 222, 0.5)",
+        },
+      }}
+    >
+      <Box sx={{ width: "28%" }}>
+        <ImageCarousel product={product} />
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          paddingTop: "25px",
+          width: "100%",
+        }}
+      >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            alignContent: "center",
-            marginBottom: theme.spacing(2),
+            width: "95%",
+            justifyContent: "space-between",
           }}
         >
-          {/* ////////////////////////////////////////Новая цена//////////////////////////////////////////// */}
           <Typography
-            variant="h5"
+            gutterBottom
+            variant="h6"
             component="div"
             sx={{
               fontWeight: "bold",
-              marginRight: theme.spacing(1),
-              color: theme.palette.primary.main,
+              textAlign: "left",
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
-            {product.price.toLocaleString()}₽
-          </Typography>
-          {/* ////////////////////////////////////////Новая цена//////////////////////////////////////////// */}
-
-          {/* ////////////////////////////////////////Старая цена//////////////////////////////////////////// */}
-          {product.old_price && (
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                textDecoration: "line-through",
-                color: theme.palette.text.disabled,
-              }}
-            >
-              {product.old_price?.toLocaleString()} ₽
-            </Typography>
-          )}
-          {/* ////////////////////////////////////////Старая цена//////////////////////////////////////////// */}
-        </Box>
-        {/* **************************************Блок Новая цена старая цена************************************* */}
-
-        {/* **************************************Вналичии************************************** */}
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <Typography color={product.in_stock ? "success.main" : "error.main"}>
-            {product.in_stock ? "В наличии" : "Нет в наличии"}
+            {product.name}
           </Typography>
 
-          <IconButton
-            onClick={handleToggleFavorite}
-            sx={{ color: isFavorite ? theme.palette.error.main : "inherit" }}
-          >
-            {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-          </IconButton>
-        </Box>
-        {/* **************************************Вналичии************************************** */}
+          <Box>
+            <Box>
+              <PriceDisplay
+                price={product.price}
+                oldPrice={product.old_price}
+              />
+              <StockStatus inStock={product.in_stock} product={product} />
+            </Box>
 
-        {items.find((item) => item.id === product.id) ? (
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            onClick={() => dispatch(removeItem({ id: product.id }))}
-            sx={{ marginTop: theme.spacing(2), borderRadius: "20px" }}
-          >
-            Удалить из корзины
-          </Button>
-        ) : (
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            onClick={handleAddToCart}
-            sx={{ marginTop: theme.spacing(2), borderRadius: "20px" }}
-            disabled={!product.in_stock}
-          >
-            В корзину
-          </Button>
-        )}
-      </CardContent>
-    </Card>
+            <Box>
+              <ActionButton
+                inBasket={isProductInBasket}
+                onAdd={handleAddToCart}
+                onRemove={handleRemoveFromCart}
+                disabled={!product.in_stock}
+              />
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

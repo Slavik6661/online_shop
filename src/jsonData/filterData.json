@@ -1,210 +1,1267 @@
 [
   {
-    "id":1,
-    "label": "Цена, ₽",
-    "filterName": "priceRange",
-    "priceRange": [0, 200000],
-    "type": "range",
-    "searchBare": false
-  },
-  {
-    "id":2,
-    "label": "Встроенная память",
-    "filterName": "memoryOptions",
-    "options": [
+    "smartphone": [
       {
         "id": 1,
-        "label": "64 ГБ",
-        "isChecked": false
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 200000],
+        "type": "range",
+        "searchBare": false
       },
       {
         "id": 2,
-        "label": "128 ГБ",
-        "isChecked": false
+        "label": "Встроенная память",
+        "filterName": "memoryOptions",
+        "options": [
+          {
+            "id": 1,
+            "label": "64 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "128 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "256 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "512 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "1 ТБ",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 3,
-        "label": "256 ГБ",
-        "isChecked": false
+        "label": "Оперативная память",
+        "filterName": "storageOptions",
+        "options": [
+          {
+            "id": 1,
+            "label": "4 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "6 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "8 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "12 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "16 ГБ",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 4,
-        "label": "512 ГБ",
-        "isChecked": false
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Apple",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Samsung",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Xiaomi",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "OnePlus",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "Realme",
+            "isChecked": false
+          },
+          {
+            "id": 6,
+            "label": "OnePlus",
+            "isChecked": false
+          },
+          {
+            "id": 7,
+            "label": "Google Pixel",
+            "isChecked": false
+          },
+          {
+            "id": 8,
+            "label": "Huawei",
+            "isChecked": false
+          },
+          {
+            "id": 9,
+            "label": "Sony",
+            "isChecked": false
+          },
+          {
+            "id": 10,
+            "label": "Oppo",
+            "isChecked": false
+          },
+          {
+            "id": 11,
+            "label": "Vivo",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 5,
-        "label": "1 ТБ",
-        "isChecked": false
+        "label": "Количество ядер",
+        "filterName": "numberCores",
+        "options": [
+          {
+            "id": 1,
+            "label": "4",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "6",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "8",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "12",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "16",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 6,
+        "label": "Годы",
+        "filterName": "years",
+        "options": [
+          {
+            "id": 1,
+            "label": "2020",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "2021",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "2022",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "2023",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "2024",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       }
     ],
-    "type": "checkbox",
-    "searchBare": false
-  },
-  {
-    "id":3,
-    "label": "Оперативная память",
-    "filterName": "storageOptions",
-    "options": [
+    "notebook": [
       {
         "id": 1,
-        "label": "4 ГБ",
-        "isChecked": false
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 300000],
+        "type": "range",
+        "searchBare": false
       },
       {
         "id": 2,
-        "label": "6 ГБ",
-        "isChecked": false
+        "label": "Процессор",
+        "filterName": "processor",
+        "options": [
+          {
+            "id": 1,
+            "label": "Intel Core i3",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Intel Core i5",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Intel Core i7",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Intel Core i9",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "AMD Ryzen 3",
+            "isChecked": false
+          },
+          {
+            "id": 6,
+            "label": "AMD Ryzen 5",
+            "isChecked": false
+          },
+          {
+            "id": 7,
+            "label": "AMD Ryzen 7",
+            "isChecked": false
+          },
+          {
+            "id": 8,
+            "label": "AMD Ryzen 9",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 3,
-        "label": "8 ГБ",
-        "isChecked": false
+        "label": "Оперативная память",
+        "filterName": "ram",
+        "options": [
+          {
+            "id": 1,
+            "label": "4 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "8 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "16 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "32 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "64 ГБ",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 4,
-        "label": "12 ГБ",
-        "isChecked": false
+        "label": "Встроенная память",
+        "filterName": "memory",
+        "options": [
+          {
+            "id": 1,
+            "label": "128 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "256 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "512 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "1 ТБ",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "2 ТБ",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 5,
-        "label": "16 ГБ",
-        "isChecked": false
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Apple",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Dell",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "HP",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Lenovo",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "Acer",
+            "isChecked": false
+          },
+          {
+            "id": 6,
+            "label": "Asus",
+            "isChecked": false
+          },
+          {
+            "id": 7,
+            "label": "Microsoft",
+            "isChecked": false
+          },
+          {
+            "id": 8,
+            "label": "MSI",
+            "isChecked": false
+          },
+          {
+            "id": 9,
+            "label": "Razer",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
+      },
+      {
+        "id": 6,
+        "label": "Размер экрана",
+        "filterName": "screenSize",
+        "options": [
+          {
+            "id": 1,
+            "label": "11\"",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "13\"",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "14\"",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "15\"",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "17\"",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 7,
+        "label": "Годы",
+        "filterName": "years",
+        "options": [
+          {
+            "id": 1,
+            "label": "2020",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "2021",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "2022",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "2023",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "2024",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       }
     ],
-    "type": "checkbox",
-    "searchBare": true
-  },
-  {
-    "id": 4,
-    "label": "Бренды",
-    "filterName": "brands",
-    "options": [
+    "computer": [],
+    "tv": [
       {
         "id": 1,
-        "label": "Apple",
-        "isChecked": false
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 500000],
+        "type": "range",
+        "searchBare": false
       },
       {
         "id": 2,
-        "label": "Samsung",
-        "isChecked": false
+        "label": "Размер экрана",
+        "filterName": "screenSize",
+        "options": [
+          {
+            "id": 1,
+            "label": "32\"",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "40\"",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "43\"",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "50\"",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "55\"",
+            "isChecked": false
+          },
+          {
+            "id": 6,
+            "label": "65\"",
+            "isChecked": false
+          },
+          {
+            "id": 7,
+            "label": "75\"",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 3,
-        "label": "Xiaomi",
-        "isChecked": false
+        "label": "Разрешение экрана",
+        "filterName": "screenResolution",
+        "options": [
+          {
+            "id": 1,
+            "label": "HD",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Full HD",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "4K",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "8K",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 4,
-        "label": "OnePlus",
-        "isChecked": false
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Samsung",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "LG",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Sony",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Panasonic",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "TCL",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 5,
-        "label": "Realme",
-        "isChecked": false
+        "label": "Тип экрана",
+        "filterName": "screenType",
+        "options": [
+          {
+            "id": 1,
+            "label": "LED",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "OLED",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "QLED",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
-        "id":6,
-        "label": "OnePlus",
-        "isChecked": false
-      },
-      {
-        "id":7,
-        "label": "Google Pixel",
-        "isChecked": false
-      },
-      {
-        "id":8,
-        "label": "Huawei",
-        "isChecked": false
-      },
-      {
-        "id":9,
-        "label": "Sony",
-        "isChecked": false
-      },
-      {
-        "id":10,
-        "label": "Oppo",
-        "isChecked": false
-      },
-      {
-        "id":11,
-        "label": "Vivo",
-        "isChecked": false
+        "id": 6,
+        "label": "Годы",
+        "filterName": "years",
+        "options": [
+          {
+            "id": 1,
+            "label": "2020",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "2021",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "2022",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "2023",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "2024",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       }
     ],
-    "type": "checkbox",
-    "searchBare": true
-  },
-  {
-    "id":5,
-    "label": "Количество ядер",
-    "filterName": "numberCores",
-    "options": [
+    "tablet": [
       {
         "id": 1,
-        "label": "4",
-        "isChecked": false
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 100000],
+        "type": "range",
+        "searchBare": false
       },
       {
         "id": 2,
-        "label": "6",
-        "isChecked": false
+        "label": "Размер экрана",
+        "filterName": "screenSize",
+        "options": [
+          {
+            "id": 1,
+            "label": "7\"",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "8\"",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "10\"",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "11\"",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "12\"",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 3,
-        "label": "8",
-        "isChecked": false
+        "label": "Оперативная память",
+        "filterName": "ram",
+        "options": [
+          {
+            "id": 1,
+            "label": "2 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "3 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "4 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "6 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "8 ГБ",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 4,
-        "label": "12",
-        "isChecked": false
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Apple",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Samsung",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Lenovo",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Huawei",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "Xiaomi",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 5,
-        "label": "16",
-        "isChecked": false
+        "label": "Операционная система",
+        "filterName": "os",
+        "options": [
+          {
+            "id": 1,
+            "label": "iOS",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Android",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Windows",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       }
     ],
-    "type": "checkbox",
-    "searchBare": false
-  },
-  {
-    "id":6,
-    "label": "Годы",
-    "filterName": "years",
-    "options": [
+    "speaker": [],
+    "headphone": [
       {
         "id": 1,
-        "label": "2020",
-        "isChecked": false
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 50000],
+        "type": "range",
+        "searchBare": false
       },
       {
         "id": 2,
-        "label": "2021",
-        "isChecked": false
+        "label": "Тип наушников",
+        "filterName": "headphoneType",
+        "options": [
+          {
+            "id": 1,
+            "label": "Наушники-вкладыши",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Наушники-капельки",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Накладные наушники",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Полноразмерные наушники",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 3,
-        "label": "2022",
-        "isChecked": false
+        "label": "Беспроводные",
+        "filterName": "wireless",
+        "options": [
+          {
+            "id": 1,
+            "label": "Да",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Нет",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       },
       {
         "id": 4,
-        "label": "2023",
-        "isChecked": false
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Apple",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Sony",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Bose",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Sennheiser",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "JBL",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
       },
       {
         "id": 5,
-        "label": "2024",
-        "isChecked": false
+        "label": "Шумоподавление",
+        "filterName": "noiseCancelling",
+        "options": [
+          {
+            "id": 1,
+            "label": "Да",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Нет",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
       }
     ],
-    "type": "checkbox",
-    "searchBare": false
+    "smartwatch": [
+      {
+        "id": 1,
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 100000],
+        "type": "range",
+        "searchBare": false
+      },
+      {
+        "id": 2,
+        "label": "Операционная система",
+        "filterName": "os",
+        "options": [
+          {
+            "id": 1,
+            "label": "Wear OS",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "watchOS",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Tizen",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Garmin OS",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "Fitbit OS",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 3,
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Apple",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Samsung",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Garmin",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Fitbit",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "Fossil",
+            "isChecked": false
+          },
+          {
+            "id": 6,
+            "label": "Huawei",
+            "isChecked": false
+          },
+          {
+            "id": 7,
+            "label": "Xiaomi",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
+      },
+      {
+        "id": 4,
+        "label": "Функции",
+        "filterName": "features",
+        "options": [
+          {
+            "id": 1,
+            "label": "GPS",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "NFC",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Сердечный ритм",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Сон",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "Физическая активность",
+            "isChecked": false
+          },
+          {
+            "id": 6,
+            "label": "Водонепроницаемость",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 5,
+        "label": "Размер экрана",
+        "filterName": "screenSize",
+        "options": [
+          {
+            "id": 1,
+            "label": "1.2\"",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "1.3\"",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "1.4\"",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "1.5\"",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "1.6\"",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 6,
+        "label": "Годы",
+        "filterName": "years",
+        "options": [
+          {
+            "id": 1,
+            "label": "2020",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "2021",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "2022",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "2023",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "2024",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      }
+    ],
+    "camera": [],
+    "gameConsole": [
+      {
+        "id": 1,
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 100000],
+        "type": "range",
+        "searchBare": false
+      },
+      {
+        "id": 2,
+        "label": "Тип консоли",
+        "filterName": "consoleType",
+        "options": [
+          {
+            "id": 1,
+            "label": "PlayStation",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Xbox",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Nintendo",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 3,
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Sony",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Microsoft",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Nintendo",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
+      },
+      {
+        "id": 4,
+        "label": "Объем памяти",
+        "filterName": "storage",
+        "options": [
+          {
+            "id": 1,
+            "label": "500 ГБ",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "1 ТБ",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "2 ТБ",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      }
+    ],
+    "vacuumCleaner": [
+      {
+        "id": 1,
+        "label": "Цена, ₽",
+        "filterName": "priceRange",
+        "priceRange": [0, 50000],
+        "type": "range",
+        "searchBare": false
+      },
+      {
+        "id": 2,
+        "label": "Тип пылесоса",
+        "filterName": "vacuumType",
+        "options": [
+          {
+            "id": 1,
+            "label": "Робот-пылесос",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Пылесос с мешком",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "Пылесос без мешка",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Пылесос с аккумулятором",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      },
+      {
+        "id": 3,
+        "label": "Бренды",
+        "filterName": "brands",
+        "options": [
+          {
+            "id": 1,
+            "label": "Dyson",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "Samsung",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "LG",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Philips",
+            "isChecked": false
+          },
+          {
+            "id": 5,
+            "label": "iRobot",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": true
+      },
+      {
+        "id": 4,
+        "label": "Мощность всасывания",
+        "filterName": "suctionPower",
+        "options": [
+          {
+            "id": 1,
+            "label": "До 100 Вт",
+            "isChecked": false
+          },
+          {
+            "id": 2,
+            "label": "100-200 Вт",
+            "isChecked": false
+          },
+          {
+            "id": 3,
+            "label": "200-300 Вт",
+            "isChecked": false
+          },
+          {
+            "id": 4,
+            "label": "Более 300 Вт",
+            "isChecked": false
+          }
+        ],
+        "type": "checkbox",
+        "searchBare": false
+      }
+    ]
   }
 ]

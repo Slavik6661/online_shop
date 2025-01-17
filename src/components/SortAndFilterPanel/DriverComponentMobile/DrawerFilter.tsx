@@ -1,15 +1,14 @@
-import { Box, Drawer, Typography } from "@mui/joy";
-import Filter from "../../FilterMenu/Filter";
 import { useAppSelector } from "../../../redux/hooks/hooks";
-import { UiState } from "../../../redux/slices/uiSlice";
+import { stateModal } from "../../../redux/slices/uiSlice";
+import { Drawer } from "@mui/joy";
+import Filter from "../../FilterMenu/Filter";
 
 const DrawerFilter = () => {
-  const isOpenFilterModal = useAppSelector(
-    (state: { ui: UiState }) => state.ui.modals["filterModal"]
-  );
+  const modalState = useAppSelector(stateModal).filterModal || false;
+
   return (
     <Drawer
-      open={isOpenFilterModal}
+      open={modalState}
       anchor="right"
       invertedColors
       size="lg"

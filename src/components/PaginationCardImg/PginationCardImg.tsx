@@ -26,8 +26,8 @@ const PaginationCardImg: React.FC<PaginationCardImgProps> = ({
         <Box
           key={index}
           sx={{
-            width: "10px",
-            height: "10px",
+            width: "7px",
+            height: "7px",
             borderRadius: "50%",
             backgroundColor: currentImage === index ? "blue" : "gray",
           }}

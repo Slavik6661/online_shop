@@ -1,14 +1,18 @@
 import { Box } from "@mui/joy";
 import { useAppSelector } from "../redux/hooks/hooks";
-import { selectBasketItems } from "../redux/slices/basketSlice";
+import {
+  selectBasketItems,
+  selectBasketTotalPrice,
+} from "../redux/slices/basketSlice";
 import theme from "../theme";
 import BackLinkCard from "../components/BackLinkCard/BackLinkCard";
 import CustomBreadcrumbs from "../components/CustomBreadcrumbs/CustomBreadcrumbs";
 import BasketCard from "../components/BasketCard/BasketCard";
-import { Product } from "../interfaces/products";
 
 const Basket = () => {
   const basketItems = useAppSelector(selectBasketItems);
+  const totalPrice = useAppSelector(selectBasketTotalPrice);
+  console.log("Product!!!!!!!!!", basketItems);
 
   return (
     <Box
@@ -32,9 +36,10 @@ const Basket = () => {
         <CustomBreadcrumbs />
         <BackLinkCard isMobile text="Карзина" link="/" />
         {basketItems.map((item) => (
-          <BasketCard basketItem={item} />
+          <BasketCard basketItem={item} key={item.id} />
         ))}
       </Box>
+      <Box>{totalPrice}</Box>
     </Box>
   );
 };

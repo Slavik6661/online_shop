@@ -16,6 +16,9 @@ const ScrollBarList: React.FC<ScrollBarListProps> = ({
 }) => {
   const theme = useTheme();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const isDragginRef = useRef(false);
+  const startXRef = useRef(0);
+  const scrollLeftRef = useRef(0);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
@@ -28,6 +31,30 @@ const ScrollBarList: React.FC<ScrollBarListProps> = ({
       });
     }
   };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (scrollContainerRef.current) {
+      isDragginRef.current = true;
+      startXRef.current = e.clientX;
+      scrollLeftRef.current = scrollContainerRef.current.scrollLeft;
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (scrollContainerRef.current && isDragginRef.current) {
+      const dx = e.clientX - startXRef.current;
+      scrollContainerRef.current.scrollLeft = scrollLeftRef.current - dx;
+    }
+  };
+
+  const handleMouseUp = () => {
+    isDragginRef.current = false;
+  };
+
+  const handleMouseLeave = () => {
+    isDragginRef.current = false;
+  };
+
   return (
     <>
       <Box
@@ -65,13 +92,15 @@ const ScrollBarList: React.FC<ScrollBarListProps> = ({
             onClick={() => scroll("left")}
             sx={{
               position: "absolute",
-              left: -35,
+              left: "-100px",
+              top: "50%",
+              transform: "translateY(-50%)",
               zIndex: 1,
               backgroundColor: theme.palette.background.paper,
               borderRadius: "50%",
               minWidth: "40px",
-              width: "40px",
-              height: "40px",
+              width: "60px",
+              height: "60px",
               display: { xs: "none", md: "flex" },
               "&:hover": {
                 backgroundColor: "rgba(222, 222, 222, 0.5)",
@@ -84,6 +113,12 @@ const ScrollBarList: React.FC<ScrollBarListProps> = ({
           {/* Контейнер с прокруткой */}
           <Box
             ref={scrollContainerRef}
+            // {Прокрутка мышкой по горизонтали}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseLeave}
+            // {Прокрутка мышкой по горизонтали}
             sx={{
               display: "flex",
               gap: "72px",
@@ -108,13 +143,15 @@ const ScrollBarList: React.FC<ScrollBarListProps> = ({
             onClick={() => scroll("right")}
             sx={{
               position: "absolute",
-              right: -40,
+              top: "50%",
+              right: "-100px",
+              transform: "translateY(-50%)",
               zIndex: 1,
               backgroundColor: theme.palette.background.paper,
               borderRadius: "50%",
               minWidth: "40px",
-              width: "40px",
-              height: "40px",
+              width: "60px",
+              height: "60px",
               display: { xs: "none", md: "flex" },
               "&:hover": {
                 backgroundColor: "rgba(222, 222, 222, 0.5)",

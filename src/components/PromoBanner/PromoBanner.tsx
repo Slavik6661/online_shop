@@ -53,7 +53,7 @@ const PromoBanner: React.FC = () => {
           backgroundColor: theme.palette.background.paper,
           color: theme.palette.text.primary,
           width: { xs: "100%", sm: "70%", md: "70%" },
-          height: { xs: "180px", sm: "200px", md: "200px" },
+          height: { xs: "180px", sm: "250px", md: "250px" },
           position: "relative",
         }}
       >
@@ -61,7 +61,7 @@ const PromoBanner: React.FC = () => {
           onClick={handlePreviousImage}
           sx={{
             position: "absolute",
-            left: 0,
+            left: "-60px",
             top: "40%",
             zIndex: 10,
             backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -71,6 +71,7 @@ const PromoBanner: React.FC = () => {
               left: "5px",
               width: "30px",
               height: "30px",
+              display: "none",
             },
           }}
         >
@@ -101,7 +102,7 @@ const PromoBanner: React.FC = () => {
           onClick={handleNextImage}
           sx={{
             position: "absolute",
-            right: 0,
+            right: "-60px",
             top: "40%",
             zIndex: 10,
             backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -111,14 +112,16 @@ const PromoBanner: React.FC = () => {
               right: "5px",
               width: "30px",
               height: "30px",
+              display: "none",
             },
           }}
         >
           <ChevronRightIcon />
         </IconButton>
-      </Box>
-      <Box sx={{ width: "100%", position: "absolute", bottom: "278px" }}>
-        <PaginationCardImg product={product} currentImage={currentImage} />
+
+        <Box sx={{ position: "absolute", bottom: "-30px", width: "100%" }}>
+          <PaginationCardImg product={product} currentImage={currentImage} />
+        </Box>
       </Box>
     </Box>
   );

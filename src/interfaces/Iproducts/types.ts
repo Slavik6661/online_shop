@@ -1,4 +1,4 @@
-export * from './smartPhone';
+export * from './IsmartPhone/smartPhone';
 export * from './laptop';
 export * from './smartWatch';
 export * from './tv';

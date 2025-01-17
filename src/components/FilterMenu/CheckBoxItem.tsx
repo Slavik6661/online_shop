@@ -1,4 +1,4 @@
-import { FC, SetStateAction, useRef, useState } from "react";
+import { FC, useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { Checkbox, List, ListItem } from "@mui/joy";
 

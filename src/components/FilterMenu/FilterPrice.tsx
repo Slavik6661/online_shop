@@ -39,8 +39,24 @@ const FileterPrice: React.FC<FilterPriceProps> = ({ rangePrice }) => {
               padding: "0 10px",
             }}
           >
-            от {priceRange[0]}
-            <Typography sx={{ marginLeft: theme.spacing(1) }}>
+            <Typography
+              sx={{
+                width: "100px",
+                border: "solid 1px #dfd3d3",
+                padding: "7px",
+                borderRadius: "5px",
+              }}
+            >
+              от {priceRange[0]}
+            </Typography>
+            <Typography
+              sx={{
+                marginLeft: theme.spacing(1),
+                border: "solid 1px #dfd3d3",
+                padding: "7px",
+                borderRadius: "5px",
+              }}
+            >
               до {priceRange[1]}
             </Typography>
           </Typography>
