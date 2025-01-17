@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Box, IconButton, useTheme } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { bannerIcon, bannerIcon2, bannerIcon3 } from "../../assets/promoBanner";
+import {
+  bannerIcon4,
+  bannerIcon5,
+  bannerIcon6,
+  bannerIcon7,
+} from "../../assets/promoBanner";
 import PaginationCardImg from "../PaginationCardImg/PginationCardImg";
 
-const images = [
-  "https://cdn.citilink.ru/xMTRNakpEguZQ6pPRK3urwgS3UyUVaYz-C0FzXKgnkU/resizing_type:fit/gravity:sm/width:1480/height:250/plain/banners/nw_banner_3_21348_A_1731494648.jpg",
-  "https://cdn.citilink.ru/clf4FULDueipMhYpOPUvbxlyL_Tgn-972RA6IJ_gamo/resizing_type:fit/gravity:sm/width:1480/height:250/plain/banners/nw_banner_3_21497_A_1733398086.jpg",
-  "https://cdn.citilink.ru/m5nsaoTtl7vQrjLuxIRj9xMjWjt67bduD6OmwgvfVJk/resizing_type:fit/gravity:sm/width:1480/height:250/plain/banners/nw_banner_3_21395_A_1732001805.jpg",
-  "https://cdn.citilink.ru/4L4V3Fa_e4UOrfntUsifkqrQszrsicfHz8dRvtSTZrE/resizing_type:fit/gravity:sm/width:1480/height:250/plain/banners/nw_banner_3_21526_A_1733742810.jpg",
-];
+const images = [bannerIcon4, bannerIcon5, bannerIcon6, bannerIcon7];
 const product = { image: images };
 const PromoBanner: React.FC = () => {
   const theme = useTheme();
