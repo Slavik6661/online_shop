@@ -1,0 +1,21 @@
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Убедитесь, что занимает всю ширину */
+  height: 100%; /* Убедитесь, что занимает всю высоту */
+  display: flex; /* Если нужно, чтобы дети были флекс-элементами */
+} 
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

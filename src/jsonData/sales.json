@@ -1,0 +1,740 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 13",
+    "price": 79990,
+    "old_price": 89990,
+    "popularity": 6,
+    "reviews": 50,
+    "rating": 4.8,
+    "type": "smartphone",
+    "image": [
+      "/productCardImg/Apple iPhone 13.png",
+      "/productCardImg/Apple iPhone 13 2.png",
+      "/productCardImg/Apple iPhone 13 3.png"
+    ],
+    "discount": "10%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Индия",
+    "general": {
+      "type": "смартфон",
+      "model": "Apple iPhone 13",
+      "release_year": 2021
+    },
+    "appearance": {
+      "back_color": "синий",
+      "edge_color": "синий",
+      "manufacturer_color": "синий"
+    },
+    "mobile_connectivity": {
+      "2G_bands": "GSM 850 (B5), GSM 900 (B8), GSM 1800 (B3), GSM 1900 (B2)",
+      "3G_bands": "UMTS 850 (B5), UMTS 900 (B8), UMTS 1700 (B4), UMTS 1900 (B2), UMTS 2100 (B1)",
+      "4G_support": true,
+      "4G_bands": "FDD-LTE 700 (B12), FDD-LTE 700 (B13), FDD-LTE 700 (B17), FDD-LTE 700 (B28), FDD-LTE 800 (B20), ещё",
+      "4G_LTE_Advanced": true,
+      "VoLTE_support": true,
+      "5G_support": true,
+      "5G_bands": "FDD-5G 700 (B12), FDD-5G 700 (B28), FDD-5G 800 (B20), FDD-5G 850 (B5), FDD-5G 900 (B8), ещё",
+      "SIM_format": "Nano-SIM, eSIM",
+      "physical_SIM_count": 1,
+      "eSIM_count": 1
+    },
+    "display": {
+      "diagonal": "6.1\"",
+      "resolution": "2532x1170",
+      "technology": "AMOLED",
+      "matrix_type": "Super Retina XDR",
+      "brightness": "1200 Кд/м²",
+      "refresh_rate": "60 Гц",
+      "pixel_density": "460 ppi",
+      "aspect_ratio": "19.5:9"
+    },
+    "construction_and_protection": {
+      "body_type": "классический",
+      "material": "металл, стекло",
+      "protection": "защита от пыли и влаги, защитное покрытие экрана от царапин, олеофобное покрытие",
+      "screen_protection": "Ceramic Shield",
+      "IP_rating": "IP68",
+      "notch_type": "вырез-челка"
+    },
+    "OS_and_processor": {
+      "OS": "iOS",
+      "OS_version": "iOS 15",
+      "Google_Mobile_Services": false,
+      "processor_model": "Apple A15 Bionic",
+      "core_count": 6,
+      "max_frequency": "3.23 ГГц",
+      "process_technology": "5 нм",
+      "GPU": "Apple A15 GPU"
+    },
+    "memory": {
+      "RAM": "4 ГБ",
+      "virtual_RAM_expansion": "0 ГБ",
+      "internal_storage": "128 ГБ",
+      "memory_card_slot": false
+    },
+    "main_camera": {
+      "camera_count": 2,
+      "megapixels": "12+12 Мп",
+      "aperture": "1.6, 2.4",
+      "autofocus": true,
+      "flash_type": "двойная светодиодная",
+      "field_of_view": "120°",
+      "optical_stabilization": true,
+      "digital_zoom": "5 x",
+      "optical_zoom": "2 x",
+      "features": "2-кратный оптический зум на уменьшение, 5-элементная линза, 7-элементная линза, ещё",
+      "photo_modes": "географические метки, коррекция искажений объектива, ночной режим, панорамная съемка, портретная съемка, ещё",
+      "video_recording": {
+        "formats": "Full HD, HD, Ultra HD 4K",
+        "resolutions": "1280x720 (30 кадр./сек.), 1920x1080 (25 кадр./сек.), 1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), ещё",
+        "slow_motion": true,
+        "zoom": "3-кратный цифровой зум",
+        "features": "2-кратный оптический зум на уменьшение, HDR‑видео, аудиозум, вспышка True Tone, ещё"
+      }
+    },
+    "front_camera": {
+      "dual_camera": false,
+      "megapixels": "12 Мп",
+      "aperture": 2.2,
+      "autofocus": false,
+      "flash": false,
+      "video_resolutions": "1920x1080 (25 кадр./сек.), 1920x1080 (30 кадр./сек.), 1920x1080 (60 кадр./сек.), ещё",
+      "features": "автоматическая стабилизация изображения, вспышка Retina Flash, технология Deep Fusion",
+      "modes": "Animoji и Memoji, кинематографическая стабилизация видео, коррекция искажений объектива, ночной режим, ещё"
+    },
+    "audio": {
+      "stereo_speakers": true,
+      "audio_formats": "AA, AAC‑LC, AAX, AAX+, AC3, Apple Lossless (ALAC), EAC3, FLAC, HE‑AAC, HE‑AAC v2, LPCM, M4P (защищенный AAC), MP3"
+    },
+    "communications": {
+      "bluetooth_version": 5.0,
+      "wifi_standard": "4 (802.11n), 5 (802.11ac), 6 (802.11ax)",
+      "NFC": true,
+      "navigation_systems": "A-GPS, BeiDou, GPS, Galileo, QZSS, ГЛОНАСС",
+      "IR_port": false,
+      "other_technologies": "Wi-Fi Hotspot, Wi-Fi MiMO"
+    },
+    "ports_and_sensors": {
+      "charging_interface": "Lightning 8-pin",
+      "headphone_jack": "Lightning 8-pin",
+      "OTG_support": true,
+      "sensors": "акселерометр, барометр, гироскоп, датчик освещенности, датчик приближения, компас"
+    },
+    "power": {
+      "battery_type": "Li-Ion",
+      "battery_capacity": "3240 мА*ч",
+      "charger_voltage": "нет ЗУ в комплекте",
+      "fast_charging": true,
+      "fast_charging_standards": "Power Delivery 3.0",
+      "wireless_charging": true,
+      "wireless_reverse_charging": false,
+      "music_playback_time": "75 ч",
+      "video_playback_time": "19 ч"
+    },
+    "additional_info": {
+      "biometric_security": "распознавание лица",
+      "headphones_included": false,
+      "charger_included": false,
+      "package_contents": "документация, кабель Lightning, скрепка для извлечения слота SIM-карты / карты памяти",
+      "LED_indicator": false,
+      "additional_features": "голосовой помощник Siri, поддержка аксессуаров и устройств беспроводной зарядки MagSafe, ещё",
+      "delivery_features": "работоспособность FaceTime не гарантируется"
+    },
+    "dimensions_and_weight": {
+      "width": "71.5 мм",
+      "height": "146.7 мм",
+      "thickness": "7.7 мм",
+      "weight": "173 г"
+    }
+  },
+
+  {
+    "id": 2,
+    "name": "Apple MacBook Air",
+    "price": 99990,
+    "old_price": 109990,
+    "popularity": 7,
+    "reviews": 30,
+    "rating": 4.9,
+    "type": "notebook",
+    "image": [
+      "/productCardImg/Apple MacBook Air.png",
+      "/productCardImg/Apple MacBook Air 2.png",
+      "/productCardImg/Apple MacBook Air 3.png"
+    ],
+    "discount": "10%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "ноутбук",
+      "model": "Apple MacBook Air",
+      "line": "Apple MacBook Air",
+      "manufacturer_code": "[MGN63]",
+      "release_year": 2020,
+      "gaming_laptop": false
+    },
+    "appearance": {
+      "construction": "классический",
+      "top_cover_color": "серый",
+      "manufacturer_color": "Space Grey",
+      "cover_material": "алюминий",
+      "body_material": "алюминий",
+      "lid_opening": "стандартное"
+    },
+    "input_devices": {
+      "keyboard_layout": "английская/русская",
+      "numeric_keypad": false,
+      "key_backlight": "одноцветная (белая)",
+      "touchpad": "стандартный тачпад",
+      "fingerprint_scanner": true,
+      "mechanical_keyboard": false,
+      "waterproof_keyboard": false
+    },
+    "display": {
+      "type": "IPS",
+      "diagonal": "13.3\"",
+      "resolution": "2560x1600",
+      "coating": "глянцевое",
+      "touchscreen": false,
+      "max_refresh_rate": "60 Гц",
+      "brightness": "400 Кд/м²",
+      "pixel_density": "227 ppi",
+      "dynamic_refresh_technology": false,
+      "HDR": "HDR10",
+      "additional_display": false
+    },
+    "processor": {
+      "model": "Apple M1",
+      "total_cores": 8,
+      "performance_cores": 4,
+      "efficiency_cores": 4,
+      "max_threads": 8,
+      "max_frequency": "3.2 ГГц",
+      "efficiency_cores_frequency": "2.1 ГГц",
+      "generation": "Apple M1"
+    },
+    "memory": {
+      "type": "LPDDR4x",
+      "capacity": "8 ГБ",
+      "slots": "интегрированная",
+      "max_capacity": "8 ГБ",
+      "free_slots": 0
+    },
+    "graphics": {
+      "type": "встроенный",
+      "integrated_model": "Apple M1 7-core",
+      "discrete_model": false
+    },
+    "storage": {
+      "total_SSD_capacity": "256 ГБ",
+      "free_slots": false
+    },
+    "webcam": {
+      "resolution": "1 Мп (720p)",
+      "face_recognition": false,
+      "shutter": false
+    },
+    "built_in_equipment": {
+      "microphone": true,
+      "memory_card_reader": false,
+      "optical_drive": false,
+      "sensors": "внешней освещенности"
+    },
+    "internet": {
+      "wireless_interfaces": "Bluetooth 5.0, WI-FI 6 (802.11ax)",
+      "ethernet_port": false
+    },
+    "ports": {
+      "video_ports": "USB Type-C x2",
+      "video_port_version": "DP 1.4",
+      "audio_ports": "3.5 мм jack (микрофон/аудио)",
+      "usb_type_a_ports": false,
+      "usb_type_c_ports": "USB4 x2",
+      "thunderbolt": "Thunderbolt 3",
+      "additional_interfaces": false
+    },
+    "power": {
+      "usb_power_delivery": true,
+      "battery_type": "Li-Pol",
+      "battery_capacity": "49.9 Вт*ч",
+      "approximate_battery_life": "18 ч",
+      "adapter_output_power": "30 Вт"
+    },
+    "additional_info": {
+      "TPM_support": false,
+      "package_contents": "адаптер питания, документация, кабель USB Type-C, нестандартная вилка"
+    },
+    "dimensions_and_weight": {
+      "width": "304.1 мм",
+      "depth": "212.4 мм",
+      "thickness": "16.1 мм",
+      "weight": "1.29 кг"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Samsung Galaxy Watch 5",
+    "price": 29990,
+    "old_price": 34990,
+    "popularity": 8,
+    "reviews": 20,
+    "rating": 4.7,
+    "type": "watch",
+    "image": [
+      "/productCardImg/Samsung Galaxy Watch 5.png",
+      "/productCardImg/Samsung Galaxy Watch 5 2.png",
+      "/productCardImg/Samsung Galaxy Watch 5 3.png"
+    ],
+    "discount": "15%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Южная Корея",
+    "general": {
+      "type": "умные часы",
+      "model": "Samsung Galaxy Watch 5",
+      "release_year": 2022
+    },
+    "appearance": {
+      "case_material": "алюминий",
+      "strap_material": "силикон",
+      "color": "черный"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "1.4\"",
+      "resolution": "450x450",
+      "protection": "Corning Gorilla Glass DX+"
+    },
+    "features": {
+      "health_monitoring": "пульсометр, измерение уровня кислорода в крови, ЭКГ, анализ сна",
+      "fitness_tracking": "подсчет шагов, калорий, дистанции, тренировок",
+      "water_resistance": "5 ATM",
+      "GPS": true,
+      "NFC": true,
+      "voice_assistant": "Bixby"
+    },
+    "battery": {
+      "type": "Li-Ion",
+      "capacity": "410 мА*ч",
+      "battery_life": "40 ч"
+    },
+    "connectivity": {
+      "bluetooth": "5.2",
+      "wifi": "802.11 b/g/n",
+      "LTE": true
+    },
+    "compatibility": {
+      "OS": "Android 6.0 и выше, iOS 10.0 и выше"
+    },
+    "additional_info": {
+      "package_contents": "часы, зарядное устройство, документация"
+    },
+    "dimensions_and_weight": {
+      "width": "44.4 мм",
+      "height": "43.3 мм",
+      "thickness": "9.8 мм",
+      "weight": "33.5 г"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Samsung QLED 55",
+    "price": 129990,
+    "old_price": 149990,
+    "popularity": 9,
+    "reviews": 15,
+    "rating": 4.8,
+    "type": "tv",
+    "image": [
+      "/productCardImg/SamsungQLED55.png",
+      "/productCardImg/SamsungQLED55 2.png",
+      "/productCardImg/SamsungQLED55 3.png"
+    ],
+    "discount": "13%",
+    "in_stock": true,
+    "warranty": "24 мес.",
+    "country": "Южная Корея",
+    "general": {
+      "type": "телевизор",
+      "model": "Samsung QLED 55",
+      "release_year": 2021
+    },
+    "display": {
+      "type": "QLED",
+      "size": "55\"",
+      "resolution": "3840x2160",
+      "refresh_rate": "120 Гц",
+      "HDR": "HDR10+",
+      "brightness": "1500 нит"
+    },
+    "features": {
+      "smart_TV": true,
+      "voice_assistant": "Bixby, Alexa, Google Assistant",
+      "operating_system": "Tizen",
+      "apps": "Netflix, YouTube, Disney+, ещё"
+    },
+    "connectivity": {
+      "HDMI": 4,
+      "USB": 2,
+      "bluetooth": "5.2",
+      "wifi": "802.11ac"
+    },
+    "audio": {
+      "speakers": "2.2 канала",
+      "power": "60 Вт",
+      "technologies": "Dolby Digital Plus, Object Tracking Sound"
+    },
+    "additional_info": {
+      "package_contents": "телевизор, пульт дистанционного управления, документация, кабели"
+    },
+    "dimensions_and_weight": {
+      "width": "1231.2 мм",
+      "height": "777.9 мм",
+      "thickness": "25.3 мм",
+      "weight": "17.4 кг"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Apple iPad Air 2022",
+    "price": 64990,
+    "old_price": 69990,
+    "popularity": 8,
+    "reviews": 25,
+    "rating": 4.9,
+    "type": "tablet",
+    "image": ["/productCardImg/Apple iPad Air 2022.png"],
+    "discount": "7%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "планшет",
+      "model": "Apple iPad Air",
+      "release_year": 2022
+    },
+    "appearance": {
+      "color": "серый",
+      "material": "алюминий"
+    },
+    "display": {
+      "type": "Liquid Retina",
+      "size": "10.9\"",
+      "resolution": "2360x1640",
+      "refresh_rate": "60 Гц",
+      "brightness": "500 нит",
+      "technology": "IPS"
+    },
+    "processor": {
+      "model": "Apple M1",
+      "cores": 8
+    },
+    "memory": {
+      "RAM": "8 ГБ",
+      "storage": "64 ГБ"
+    },
+    "cameras": {
+      "rear": "12 Мп",
+      "front": "7 Мп"
+    },
+    "audio": {
+      "speakers": "стерео",
+      "microphones": 3
+    },
+    "connectivity": {
+      "wifi": "802.11ax",
+      "bluetooth": "5.0",
+      "cellular": "5G"
+    },
+    "battery": {
+      "capacity": "28.6 Вт*ч",
+      "life": "10 ч"
+    },
+    "additional_info": {
+      "package_contents": "планшет, кабель USB-C, документация"
+    },
+    "dimensions_and_weight": {
+      "width": "178.5 мм",
+      "height": "247.6 мм",
+      "thickness": "6.1 мм",
+      "weight": "460 г"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Sony WH-1000XM5",
+    "price": 24990,
+    "old_price": 29990,
+    "popularity": 9,
+    "reviews": 35,
+    "rating": 4.9,
+    "type": "headphones",
+    "image": [
+      "/productCardImg/Sony WH-1000XM5.png",
+      "/productCardImg/Sony WH-1000XM5 2.png"
+    ],
+    "discount": "17%",
+    "in_stock": false,
+    "warranty": "12 мес.",
+    "country": "Япония",
+    "general": {
+      "type": "наушники",
+      "model": "Sony WH-1000XM5",
+      "release_year": 2022
+    },
+    "appearance": {
+      "color": "черный",
+      "material": "пластик, кожа"
+    },
+    "audio": {
+      "driver_size": "40 мм",
+      "frequency_response": "4-40000 Гц",
+      "impedance": "48 Ом",
+      "sensitivity": "102 дБ"
+    },
+    "features": {
+      "noise_cancelling": true,
+      "voice_assistant": "Google Assistant, Alexa",
+      "multipoint_connection": true,
+      "quick_attention_mode": true
+    },
+    "battery": {
+      "life": "30 ч",
+      "quick_charge": "3 ч за 3 мин"
+    },
+    "connectivity": {
+      "bluetooth": "5.2",
+      "codecs": "LDAC, AAC, SBC"
+    },
+    "additional_info": {
+      "package_contents": "наушники, чехол, кабель USB-C, документация"
+    },
+    "dimensions_and_weight": {
+      "width": "186 мм",
+      "height": "250 мм",
+      "thickness": "61 мм",
+      "weight": "250 г"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Sony PlayStation 5",
+    "price": 49990,
+    "old_price": 54990,
+    "popularity": 10,
+    "reviews": 50,
+    "rating": 4.9,
+    "type": "console",
+    "image": [
+      "/productCardImg/Sony PlayStation 5.png",
+      "/productCardImg/Sony PlayStation 5 2.png"
+    ],
+    "discount": "9%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Япония",
+    "general": {
+      "type": "игровая консоль",
+      "model": "Sony PlayStation 5",
+      "release_year": 2020
+    },
+    "appearance": {
+      "color": "белый",
+      "material": "пластик"
+    },
+    "processor": {
+      "model": "AMD Ryzen Zen 2",
+      "cores": 8,
+      "frequency": "3.5 ГГц"
+    },
+    "graphics": {
+      "model": "AMD Radeon RDNA 2",
+      "frequency": "2.23 ГГц",
+      "ray_tracing": true
+    },
+    "memory": {
+      "RAM": "16 ГБ GDDR6",
+      "storage": "825 ГБ SSD"
+    },
+    "features": {
+      "4K_gaming": true,
+      "HDR": true,
+      "VR_support": true,
+      "backward_compatibility": "PlayStation 4"
+    },
+    "connectivity": {
+      "HDMI": "2.1",
+      "USB": "USB 3.1, USB Type-C",
+      "bluetooth": "5.1",
+      "wifi": "802.11ac"
+    },
+    "additional_info": {
+      "package_contents": "консоль, беспроводной контроллер DualSense, документация, кабели"
+    },
+    "dimensions_and_weight": {
+      "width": "390 мм",
+      "height": "260 мм",
+      "thickness": "104 мм",
+      "weight": "4.5 кг"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Xiaomi Redmi Note 12 Pro",
+    "price": 34990,
+    "old_price": 39990,
+    "popularity": 8,
+    "reviews": 25,
+    "rating": 4.8,
+    "type": "smartphone",
+    "image": ["/productCardImg/Xiaomi Redmi Note 12 Pro.png"],
+    "discount": "12%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "смартфон",
+      "model": "Xiaomi Redmi Note 12 Pro",
+      "release_year": 2022
+    },
+    "appearance": {
+      "color": "черный",
+      "material": "стекло, пластик"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "6.67\"",
+      "resolution": "2400x1080",
+      "refresh_rate": "120 Гц",
+      "brightness": "1200 нит"
+    },
+    "processor": {
+      "model": "MediaTek Dimensity 1080",
+      "cores": 8,
+      "frequency": "2.6 ГГц"
+    },
+    "memory": {
+      "RAM": "8 ГБ",
+      "storage": "256 ГБ"
+    },
+    "cameras": {
+      "rear": "108 Мп + 8 Мп + 2 Мп",
+      "front": "16 Мп"
+    },
+    "battery": {
+      "capacity": "5000 мА*ч",
+      "fast_charging": "67 Вт"
+    },
+    "connectivity": {
+      "bluetooth": "5.2",
+      "wifi": "802.11ac",
+      "NFC": true,
+      "5G": true
+    },
+    "additional_info": {
+      "package_contents": "смартфон, зарядное устройство, кабель USB Type-C, документация"
+    },
+    "dimensions_and_weight": {
+      "width": "76.2 мм",
+      "height": "163.6 мм",
+      "thickness": "7.9 мм",
+      "weight": "187 г"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Dyson V15 Detect",
+    "price": 59990,
+    "old_price": 64990,
+    "popularity": 9,
+    "reviews": 20,
+    "rating": 4.9,
+    "type": "vacuum_cleaner",
+    "image": ["/productCardImg/Dyson V15 Detect.png"],
+    "discount": "8%",
+    "in_stock": true,
+    "warranty": "24 мес.",
+    "country": "Великобритания",
+    "general": {
+      "type": "пылесос",
+      "model": "Dyson V15 Detect",
+      "release_year": 2021
+    },
+    "appearance": {
+      "color": "синий",
+      "material": "пластик"
+    },
+    "features": {
+      "cordless": true,
+      "suction_power": "230 AW",
+      "dustbin_capacity": "0.77 л",
+      "HEPA_filter": true,
+      "laser_detection": true
+    },
+    "battery": {
+      "type": "Li-Ion",
+      "capacity": "3600 мА*ч",
+      "runtime": "60 мин"
+    },
+    "additional_info": {
+      "package_contents": "пылесос, зарядная станция, насадки, документация"
+    },
+    "dimensions_and_weight": {
+      "width": "250 мм",
+      "height": "1265 мм",
+      "thickness": "220 мм",
+      "weight": "2.7 кг"
+    }
+  },
+  {
+    "id": 10,
+    "name": "JBL Charge 5",
+    "price": 14990,
+    "old_price": 17990,
+    "popularity": 9,
+    "reviews": 30,
+    "rating": 4.8,
+    "type": "speaker",
+    "image": [
+      "/productCardImg/JBL Charge 5.png",
+      "/productCardImg/JBL Charge 5 2.png"
+    ],
+    "discount": "17%",
+    "in_stock": true,
+    "warranty": "12 мес.",
+    "country": "Китай",
+    "general": {
+      "type": "колонка",
+      "model": "JBL Charge 5",
+      "release_year": 2021
+    },
+    "appearance": {
+      "color": "черный",
+      "material": "пластик, ткань"
+    },
+    "audio": {
+      "driver_size": "44 мм",
+      "frequency_response": "65-20000 Гц",
+      "power": "30 Вт",
+      "battery_life": "20 ч"
+    },
+    "features": {
+      "waterproof": "IP67",
+      "bluetooth": "5.1",
+      "partyboost": true,
+      "powerbank": true
+    },
+    "additional_info": {
+      "package_contents": "колонка, кабель USB-C, документация"
+    },
+    "dimensions_and_weight": {
+      "width": "223 мм",
+      "height": "96 мм",
+      "thickness": "94 мм",
+      "weight": "960 г"
+    }
+  }
+]

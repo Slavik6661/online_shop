@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Смартфоны",
+    "type": "smartphone",
+    "image": "/catalog/phone.png"
+  },
+  {
+    "id": 2,
+    "title": "Ноутбуки",
+    "type": "notebook",
+    "image": "/catalog/loptop.png"
+  },
+  {
+    "id": 3,
+    "title": "Компьютеры",
+    "type": "computer",
+    "image": "/catalog/computer.png"
+  },
+  {
+    "id": 4,
+    "title": "Телевизоры",
+    "type": "tv",
+    "image": "/catalog/tv.png"
+  },
+  {
+    "id": 5,
+    "title": "Планшеты",
+    "type": "tablet",
+    "image": "catalog/tablet.png"
+  },
+  {
+    "id": 6,
+    "title": "Колонки",
+    "type": "speaker",
+    "image": "catalog/speaker.png"
+  },
+  {
+    "id": 7,
+    "title": "Наушники",
+    "type": "headphones",
+    "image": "https://cdn1.smartprix.com/rx-iInRgBqmb-w1200-h1200/InRgBqmb.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Часы",
+    "type": "smart watch",
+    "image": "/catalog/smart watch.png"
+  },
+  { "id": 9, "title": "Камеры", "type": "camera", "image": "" },
+  {
+    "id": 10,
+    "title": "Игровые приставки",
+    "type": "gameConsole",
+    "image": ""
+  },
+  { "id": 11, "title": "Мониторы", "type": "monitor", "image": "" },
+  { "id": 12, "title": "Мыши", "type": "mouse", "image": "" },
+  { "id": 13, "title": "Клавиатуры", "type": "keyboard", "image": "" },
+  {
+    "id": 14,
+    "title": "Портативные зарядки",
+    "type": "portableCharger",
+    "image": ""
+  },
+  { "id": 15, "title": "Дроны", "type": "drone", "image": "" },
+  {
+    "id": 16,
+    "title": "Умные колонки",
+    "type": "smartspeaker",
+    "image": ""
+  },
+  { "id": 17, "title": "Видеокарты", "type": "videocard", "image": "" },
+  { "id": 18, "title": "Процессоры", "type": "processor", "image": "" },
+  {
+    "id": 19,
+    "title": "Материнские платы",
+    "type": "motherboard",
+    "image": ""
+  },
+  { "id": 20, "title": "SSD диски", "type": "ssd", "image": "" },
+  { "id": 21, "title": "Оперативная память", "type": "ram", "image": "" }
+]
