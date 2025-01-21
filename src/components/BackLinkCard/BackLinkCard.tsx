@@ -50,7 +50,7 @@ const BackLinkCard: React.FC<BackLinkCardProps> = ({
               }}
             ></Box>
           </Box>
-          {text || "Смартфоны"}
+          {/* {text} */}
         </Box>
       ) : (
         <Box
@@ -87,7 +87,7 @@ const BackLinkCard: React.FC<BackLinkCardProps> = ({
               }}
             ></Box>
           </Box>
-          {text || "Смартфоны"}
+          {text}
         </Box>
       )}
     </>

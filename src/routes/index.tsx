@@ -9,11 +9,7 @@ import { useAppSelector } from "../redux/hooks/hooks";
 import { selectThisCategory } from "../redux/slices/categoriesSlice";
 
 const AppRoutes = () => {
-  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-
   const category = useAppSelector(selectThisCategory)?.type;
-  console.log(category);
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />

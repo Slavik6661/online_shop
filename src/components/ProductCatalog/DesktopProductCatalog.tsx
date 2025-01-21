@@ -6,7 +6,6 @@ import CustomBreadcrumbs from "../CustomBreadcrumbs/CustomBreadcrumbs";
 import BackLinkCard from "../BackLinkCard/BackLinkCard";
 import Filter from "../FilterMenu/Filter";
 import ProductListCard from "../ProductList/ProductListCard";
-import SortItemsDesktop from "../SortAndFilterPanel/SortItemsDesktop";
 
 import { Product } from "../../interfaces/Iproducts/products";
 import PaginationComponent from "../Pagination/Pagination";
@@ -76,7 +75,7 @@ const DesktopProductCatalog: FC<DesktopProductCatalogProps> = ({
       <Box sx={styles.contentWrapper(false)}>
         <Header />
         <CustomBreadcrumbs />
-        <BackLinkCard isMobile text="Главная" link="/" />
+        <BackLinkCard isMobile={false} text="Главная" link="/" />
 
         <Box
           sx={{
@@ -99,14 +98,15 @@ const DesktopProductCatalog: FC<DesktopProductCatalogProps> = ({
           <Box sx={{ flexGrow: 1 }}>
             <Box sx={styles.productListContainer}>
               <ProductListCard items={currentItems} viewMode={viewMode} />
-
-              <Box>
-                <PaginationComponent
-                  onPageChange={handlePageChange}
-                  totalPages={totalPages}
-                  currentPage={currentPage}
-                />
-              </Box>
+              {totalPages > 1 && (
+                <Box>
+                  <PaginationComponent
+                    onPageChange={handlePageChange}
+                    totalPages={totalPages}
+                    currentPage={currentPage}
+                  />
+                </Box>
+              )}
             </Box>
           </Box>
         </Box>

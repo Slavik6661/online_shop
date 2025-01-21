@@ -21,9 +21,9 @@ export const featchSortItems = createAsyncThunk("sort/featchSortItems", async ()
     productData:[],
     sortedProducts: [], 
     sortItems: [],
-    slectedItem: JSON.parse(localStorage.getItem("selectedItem") || "0"),
     status: "loading",
     sortConfig: { sortKey: "popularity", order: "desc" },
+    slectedItem: JSON.parse(localStorage.getItem("selectedItem") || "0"),
   };
  
 const sortSlice = createSlice({

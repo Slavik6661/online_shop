@@ -16,7 +16,6 @@ const ProductListCard: FC<ProductListCardProps> = ({ items, viewMode }) => {
     width: "65vw",
     flexWrap: "wrap",
     gap: "30px",
-    // flexGrow: 1,
     justifyContent: { xs: "center", md: "space-between" },
 
     [theme.breakpoints.down("xl")]: {

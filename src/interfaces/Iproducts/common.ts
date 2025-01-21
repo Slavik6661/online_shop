@@ -230,3 +230,7 @@ export interface ConstructionAndProtection {
     package_contents: string;
   }
   
+  export interface instructions {
+    name: string;
+    file: string;
+  }

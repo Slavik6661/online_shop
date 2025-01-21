@@ -1,4 +1,5 @@
 import { Specifications } from "./IsmartPhone/smartPhoneSpecifications";
+import { instructions } from "./common";
 interface BaseProduct {
     id: number;
     name: string;
@@ -17,6 +18,7 @@ interface BaseProduct {
     quantity: number;
     description: string;
     specifications:Specifications; 
+    instructions_and_files: instructions[];
 }
 
 export default BaseProduct

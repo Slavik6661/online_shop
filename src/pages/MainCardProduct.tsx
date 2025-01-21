@@ -23,7 +23,7 @@ import ProductImages from "../components/MainCardProductComponents/ProductImages
 import SmartphoneDetails from "../components/MainCardProductComponents/SmartphoneDetails";
 import DescriptionProduct from "../components/MainCardProductComponents/DescriptionProduct";
 import SpecificationsProduct from "../components/MainCardProductComponents/SpecificationsProduct";
-import { Description } from "@mui/icons-material";
+import ProductDetailsSidebar from "../components/MainCardProductComponents/ProductDetailsSidebar";
 
 type Product = Smartphone | Laptop | Tablet | Headphones | Smartwatch;
 
@@ -31,13 +31,15 @@ const styles = {
   productName: {
     fontWeight: "400",
     color: "#2e2d2d",
-    padding: "0 0 20px 45px",
+    padding: "0 0 20px 185px",
   },
+
   productContainer: {
     display: "flex",
     flexDirection: "row",
-    paddingTop: "30px",
-    width: "95vw",
+    paddingTop: "15px",
+    paddingBottom: "15px",
+    width: "80vw",
     margin: "0 auto",
     borderRadius: "10px",
     gap: 2,
@@ -48,6 +50,7 @@ const styles = {
       width: "95vw",
     },
   },
+
   imageContainer: {
     display: "flex",
     flexDirection: "row",
@@ -58,33 +61,22 @@ const styles = {
       paddingLeft: "0",
     },
   },
-  productImage: {
-    width: "25rem",
-    height: "25rem",
-    [theme.breakpoints.up("xs")]: {
-      width: "17rem",
-      height: "17rem",
-    },
-  },
+
   detailsContainer: {
-    width: "95vw",
+    width: "80vw",
     margin: "0 auto",
     marginTop: "20px",
     borderRadius: "10px",
     border: "1px solid #ddd",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    [theme.breakpoints.down("sm")]: {
+      width: "95vw",
+    },
   },
-  downloadSection: {
-    width: "30%",
-    [theme.breakpoints.down("sm")]: { width: "100%" },
-  },
+
   descriptionSection: {
     width: "70%",
-  },
-  downloadTitle: {
-    fontWeight: "bold",
-    color: "#2e2d2d",
-    padding: "17px",
+    [theme.breakpoints.down("sm")]: { width: "auto" },
   },
 };
 
@@ -139,24 +131,7 @@ const MainCardProduct = () => {
 
       <Box>
         <Box sx={styles.productContainer}>
-          <Box sx={styles.imageContainer}>
-            <Box
-              sx={{
-                [theme.breakpoints.down("sm")]: {
-                  display: "flex",
-                },
-              }}
-            >
-              <ProductImages images={product.image} />
-            </Box>
-            <CardMedia
-              component="img"
-              src={product.image[0]}
-              alt={product.name}
-              sx={styles.productImage}
-            ></CardMedia>
-          </Box>
-
+          <ProductImages product={product as Smartphone} />
           <Box>{renderProduct()}</Box>
         </Box>
 
@@ -164,20 +139,23 @@ const MainCardProduct = () => {
           <Box
             sx={{
               display: "flex",
-
+              justifyContent: "space-around",
               [theme.breakpoints.down("sm")]: {
                 flexDirection: "column",
                 paddingBottom: "60px",
               },
             }}
           >
-            <Box sx={styles.downloadSection}>
-              <Typography variant="h5" sx={styles.downloadTitle}>
-                Файлы для скачивания
-              </Typography>
-            </Box>
+            <ProductDetailsSidebar product={product as Smartphone} />
 
-            <Box sx={{ width: "70%" }}>
+            <Box
+              sx={{
+                width: "70%",
+                [theme.breakpoints.down("sm")]: {
+                  width: "100%",
+                },
+              }}
+            >
               <DescriptionProduct product={product} />
               <SpecificationsProduct product={product as Smartphone} />
             </Box>

@@ -82,10 +82,15 @@ const SpecificationsProduct: FC<SpecificationsProductProps> = ({ product }) => {
   };
   return (
     <>
-      <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-        Характеристики:
-      </Typography>
-      <Box sx={{ width: "95%", marginTop: 2, marginBottom: 2 }}>
+      <Box
+        sx={{ width: "95%", marginTop: 2, marginBottom: 2, marginLeft: "20px" }}
+      >
+        <Typography
+          variant="h5"
+          sx={{ fontWeight: "bold", paddingBottom: "10px" }}
+        >
+          Характеристики:
+        </Typography>
         {Object.entries(product.specifications).map(([category, value]) => (
           <Accordion key={category}>
             <AccordionSummary>

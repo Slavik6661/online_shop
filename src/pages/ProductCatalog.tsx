@@ -18,10 +18,7 @@ import {
   viewModeListActive,
   viewModeListNotActive,
 } from "../assets/ViewingModeIcons";
-import {
-  featchProduct,
-  getProductsByCategorySlice,
-} from "../redux/slices/getProductSlice";
+import { featchProduct } from "../redux/slices/getProductSlice";
 
 const styles = {
   container: {
