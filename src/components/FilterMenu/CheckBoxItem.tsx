@@ -1,51 +1,81 @@
-import { FC, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { Checkbox, List, ListItem } from "@mui/joy";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooks";
+import { selectSortedProducts } from "../../redux/slices/sortSlice";
+import {
+  filterSmartphones,
+  smartphoneFilterSelector,
+  updateFilter,
+} from "../../redux/slices/filtersProductSlice/smartphoneFilter";
+import { Box } from "@mui/material";
 
 interface CheckBoxItemProps {
   options: { id: number; label: string; isChecked: boolean }[];
   searchBare: boolean;
-  fileterName: string;
+  filterName: string;
+}
+
+interface OptionFilter {
+  priceRange: number[];
+  memoryOptions: string[];
+  storageOptions: string[];
+  brands: string[];
+  numberCores: string[];
+  years: string[];
 }
 
 const CheckBoxItem: FC<CheckBoxItemProps> = ({
   options: initialOptions,
   searchBare,
-  fileterName,
+  filterName,
 }) => {
+  const sortedProducts = useAppSelector(selectSortedProducts);
+  const dispach = useAppDispatch();
+
   const [options, setOptions] = useState(initialOptions);
-  const [filteredOptions, setFilteredOptions] = useState(initialOptions);
   const [searchValue, setSearchValue] = useState("");
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const getFilterOptions = (searchBarText: string) => {
-    setSearchValue(searchBarText);
-    const filteredOption = options.filter((option) =>
-      option.label.toLowerCase().includes(searchValue.toLowerCase())
-    );
-    setFilteredOptions(filteredOption);
+  const handleSearch = (searchBarText: string) => {
+    setSearchValue(searchBarText.trim());
   };
 
   const selectAll = (event: React.ChangeEvent<HTMLInputElement>) => {
     const isChecked = event.target.checked;
-    setOptions((prev) => prev.map((option) => ({ ...option, isChecked })));
-    setFilteredOptions((prev) =>
-      prev.map((option) => ({ ...option, isChecked }))
-    );
+    const udatedOptions = options.map((option) => ({ ...option, isChecked }));
+    setOptions(udatedOptions);
+
+    const selectedValues = isChecked
+      ? udatedOptions.map((option) => option.label)
+      : [];
+    dispach(updateFilter({ filterName, value: selectedValues }));
+    dispach(filterSmartphones(sortedProducts));
   };
 
   const handleCheckBoxChange = (id: number) => {
-    setOptions((prev) =>
-      prev.map((option) =>
-        option.id === id ? { ...option, isChecked: !option.isChecked } : option
-      )
+    const updatedOptions = options.map((option) =>
+      option.id === id ? { ...option, isChecked: !option.isChecked } : option
     );
-    setFilteredOptions((prev) =>
-      prev.map((option) =>
-        option.id === id ? { ...option, isChecked: !option.isChecked } : option
-      )
-    );
+    setOptions(updatedOptions);
+
+    const selectedValues = updatedOptions
+      .filter((item) => item.isChecked)
+      .map((item) => item.label);
+
+    console.log("selectedValues", selectedValues);
+    dispach(updateFilter({ filterName, value: selectedValues }));
+    dispach(filterSmartphones(sortedProducts));
   };
+
+  const filteredOptions = useMemo(() => {
+    return options.filter((option) =>
+      option.label.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  }, [options, searchValue]);
+
+  const displayedOptions =
+    filteredOptions.length > 0 ? filteredOptions : options;
 
   return (
     <>
@@ -53,8 +83,8 @@ const CheckBoxItem: FC<CheckBoxItemProps> = ({
         <>
           <SearchBar
             value={searchValue}
-            id={fileterName}
-            onChange={(e) => getFilterOptions(e.target.value)}
+            id={filterName}
+            onChange={(e) => handleSearch(e.target.value)}
           />
 
           <ListItem sx={{ borderBottom: "1px solid #80808042" }}>
@@ -63,59 +93,40 @@ const CheckBoxItem: FC<CheckBoxItemProps> = ({
         </>
       )}
 
-      {filteredOptions.length > 0 ? (
-        <List
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            maxHeight: isExpanded ? "330px" : "290px",
-            overflow: isExpanded ? "auto" : "hidden",
-          }}
-        >
-          {filteredOptions.map((option: any) => (
-            <ListItem key={option.id}>
-              <Checkbox
-                label={option.label}
-                checked={option.isChecked}
-                onChange={() => handleCheckBoxChange(option.id)}
-              />
-            </ListItem>
-          ))}
-        </List>
-      ) : (
-        <List
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            maxHeight: isExpanded ? "330px" : "290px",
-            overflow: isExpanded ? "auto" : "hidden",
-          }}
-        >
-          {options.map((option: any) => (
-            <ListItem key={option.id}>
-              <Checkbox
-                label={option.label}
-                checked={option.isChecked}
-                onChange={() => handleCheckBoxChange(option.id)}
-              />
-            </ListItem>
-          ))}
-        </List>
-      )}
-      <span
-        onClick={() => setIsExpanded(!isExpanded)}
-        style={{
-          marginTop: 1,
-          alignSelf: "flex-start",
-          cursor: "pointer",
-          color: "#0d61af",
-          borderBottom: "1px dashed #5b5a9f",
+      <List
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          maxHeight: isExpanded ? "330px" : "290px",
+          overflow: isExpanded ? "auto" : "hidden",
         }}
       >
-        {isExpanded ? "Скрыть" : "Показать все"}
-      </span>
+        {displayedOptions.map((option: any) => (
+          <ListItem key={option.id}>
+            <Checkbox
+              label={option.label}
+              checked={option.isChecked}
+              onChange={() => handleCheckBoxChange(option.id)}
+            />
+          </ListItem>
+        ))}
+      </List>
+
+      {options.length > 8 && (
+        <span
+          onClick={() => setIsExpanded(!isExpanded)}
+          style={{
+            marginTop: 1,
+            alignSelf: "flex-start",
+            cursor: "pointer",
+            color: "#0d61af",
+            borderBottom: "1px dashed #5b5a9f",
+          }}
+        >
+          {isExpanded ? "Скрыть" : "Показать все"}
+        </span>
+      )}
     </>
   );
 };

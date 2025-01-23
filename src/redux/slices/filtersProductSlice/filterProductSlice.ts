@@ -1,10 +1,9 @@
+import { RootState } from "../../store";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import filterProductData from "../../jsonData/filterData.json";
-import { RootState } from "../store";
-import { IFilterItem } from "../../interfaces/filterProduct/IfilterProduct";
 import axios from "axios";
+import { IFilterItem } from "../../../interfaces/filterProduct/IfilterProduct";
 
-// Эмитация запроса к серверу в дальнейшем добавить запрос к серверу
+
 export const fetchFilterProductData = createAsyncThunk(
   "filterProduct/fetchFilterProductData", 
   async ({category}: {category: string} ) => {
@@ -14,28 +13,34 @@ export const fetchFilterProductData = createAsyncThunk(
 );
 
 interface FilterProductState {
-    filterProductData: IFilterItem[];
+    filterProductByCategory: IFilterItem[];
+    filterProductBySmartphones: [];
     status: "loading" | "success" | "error";
 }
 
 const initialState: FilterProductState = {
-  filterProductData: [],
+  filterProductByCategory: [],
+  filterProductBySmartphones: [],
   status: "loading"
 };
 
 const filterProductSlice = createSlice({
   name: "filterProduct",
   initialState,
-  reducers: {},
+
+  reducers: {
+    filterSmartphones(state, action: PayloadAction<[]>){
+      state.filterProductBySmartphones = action.payload
+    }
+  },
+
   extraReducers: (builder) => {
     builder.addCase(fetchFilterProductData.pending, (state) => {
       state.status = "loading";
     })
     .addCase(fetchFilterProductData.fulfilled, (state, action) => {
       state.status = "success";
-      state.filterProductData = action.payload;
-      // state.filterProductData = Object.values(action.payload).flat() as IFilterItem[];
-
+      state.filterProductByCategory = action.payload;
     })
     .addCase(fetchFilterProductData.rejected, (state) => {
       state.status = "error";
@@ -43,6 +48,6 @@ const filterProductSlice = createSlice({
   },
 });
 
-
-export const  filterProductSelector = (state:RootState) => state.filterProduct.filterProductData;
+export const { filterSmartphones } = filterProductSlice.actions;
+export const  filterProductSelector = (state:RootState) => state.filterProduct.filterProductByCategory;
 export default filterProductSlice.reducer;

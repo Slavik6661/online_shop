@@ -1,4 +1,4 @@
-import React from "react";
+import { memo, useState } from "react";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/joy";
 import FilterPrice from "./FilterPrice";
 import CheckBoxItem from "./CheckBoxItem";
@@ -19,7 +19,7 @@ interface FilterItemProps {
   searchBare?: boolean;
 }
 
-const FilterItem: React.FC<FilterItemProps> = React.memo(
+const FilterItem: React.FC<FilterItemProps> = memo(
   ({ label, filterName, priceRange, options, type, searchBare }) => {
     return (
       <Accordion defaultExpanded>
@@ -35,7 +35,7 @@ const FilterItem: React.FC<FilterItemProps> = React.memo(
             <CheckBoxItem
               options={options}
               searchBare={Boolean(searchBare)}
-              fileterName={filterName}
+              filterName={filterName}
             />
           )}
         </AccordionDetails>

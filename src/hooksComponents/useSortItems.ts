@@ -12,10 +12,12 @@ import {
 } from "../redux/slices/sortSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks/hooks";
 import { selectThisCategory } from "../redux/slices/categoriesSlice";
+import { smartphoneFilterSelector } from "../redux/slices/filtersProductSlice/smartphoneFilter";
 
 const useSortItems = () => {
   const dispatch = useAppDispatch();
   const ProductsSelectedCategory = useAppSelector(getProductsByCategorySlice);
+  const filterListSmartphones = useAppSelector(smartphoneFilterSelector);
   const selectedCategory = useAppSelector(selectThisCategory)?.type;
   const sortedItemsList = useAppSelector(getSortedItems);
   const selectSortItem = useAppSelector(getSelectedSortItem);
@@ -40,7 +42,8 @@ const useSortItems = () => {
       dispatch(
         setSortConfig({
           sortConfig: selectedSortItem,
-          products: ProductsSelectedCategory,
+          products: filterListSmartphones.length === 0 ? ProductsSelectedCategory : filterListSmartphones,
+          // products: ProductsSelectedCategory,
         })
       );
     }

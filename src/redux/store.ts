@@ -1,22 +1,14 @@
 import { configureStore} from '@reduxjs/toolkit';
-import { persistStore, persistReducer } from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
-
 import categoriesReducer from './slices/categoriesSlice';
 import uiReducer from './slices/uiSlice';
 import basketReducer from './slices/basketSlice';
 import sortReducer from './slices/sortSlice';
 import saleSlices from './slices/saleSlices';
 import favoriteReducer from './slices/favoriteSlice'
-import filterProductReducer from './slices/filterProductSlice';
+import filterProductReducer from './slices/filtersProductSlice/filterProductSlice';
 import selectProductReducer from './slices/selectProductSlice';
 import productReducer from './slices/getProductSlice';
-
-const persistConfig = {
-    key: 'root',
-    storage,
-}
-const persistedReducer = persistReducer(persistConfig, productReducer)
+import smartponeFilterReducer from './slices/filtersProductSlice/smartphoneFilter';
 
 const store = configureStore({
     reducer:{
@@ -29,6 +21,7 @@ const store = configureStore({
         favorite:favoriteReducer,
         filterProduct: filterProductReducer,
         selectProduct: selectProductReducer,
+        smartphoneFilter: smartponeFilterReducer
     },
 })
 

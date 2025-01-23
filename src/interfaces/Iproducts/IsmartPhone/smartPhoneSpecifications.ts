@@ -18,6 +18,8 @@ export interface Specifications {
 
 interface General {
     type: string;
+    brand: string;
+    country: string;
     model: string;
     release_year: number;
   }

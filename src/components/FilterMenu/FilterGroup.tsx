@@ -6,7 +6,7 @@ import { selectThisCategory } from "../../redux/slices/categoriesSlice";
 import {
   fetchFilterProductData,
   filterProductSelector,
-} from "../../redux/slices/filterProductSlice";
+} from "../../redux/slices/filtersProductSlice/filterProductSlice";
 import { IFilterItem } from "../../interfaces/filterProduct/IfilterProduct";
 import FilterItem from "./FilterItem";
 

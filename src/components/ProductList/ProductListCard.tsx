@@ -13,10 +13,10 @@ const ProductListCard: FC<ProductListCardProps> = ({ items, viewMode }) => {
   const gridStyles = {
     margin: "0px auto",
     display: "flex",
-    width: "65vw",
+    width: "57vw",
     flexWrap: "wrap",
     gap: "30px",
-    justifyContent: { xs: "center", md: "space-between" },
+    // justifyContent: { xs: "center", md: "" },
 
     [theme.breakpoints.down("xl")]: {
       width: "65vw",

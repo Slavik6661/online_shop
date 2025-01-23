@@ -19,6 +19,7 @@ import {
   viewModeListNotActive,
 } from "../assets/ViewingModeIcons";
 import { featchProduct } from "../redux/slices/getProductSlice";
+import { smartphoneFilterSelector } from "../redux/slices/filtersProductSlice/smartphoneFilter";
 
 const styles = {
   container: {
@@ -70,7 +71,9 @@ const ProductCatalog = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
+  //сделать так то бы сорт продукт принимал в себя массив продуктов и сортировал иначе сортировл стандартный массив
   const sortedProducts = useAppSelector(selectSortedProducts);
+  const filterListSmartphones = useAppSelector(smartphoneFilterSelector);
   const selectedCategory = useAppSelector(selectThisCategory)?.type;
 
   //Вынести логику в Store
@@ -78,11 +81,11 @@ const ProductCatalog = () => {
   const ITEMS_PER_PAGE = 8;
 
   const filteredProducts = useMemo(() => {
-    if (!selectedCategory) return sortedProducts;
-    return sortedProducts.filter(
-      (product) => product.type === selectedCategory
-    );
-  }, [sortedProducts, selectedCategory]);
+    return sortedProducts;
+    // return filterListSmartphones.length === 0
+    //   ? sortedProducts
+    //   : filterListSmartphones;
+  }, [sortedProducts, filterListSmartphones, selectedCategory]);
 
   const totalPages = useMemo(
     () => Math.ceil(filteredProducts.length / ITEMS_PER_PAGE),
@@ -155,3 +158,15 @@ const ProductCatalog = () => {
 };
 
 export default ProductCatalog;
+
+{
+  /* <Box>
+{filterListSmartphones &&
+  filterListSmartphones.map((filter) => (
+    <div key={filter.id}>
+      <p>{filter.name}</p>
+      <p>{filter.price}</p>
+    </div>
+  ))}
+</Box> */
+}
